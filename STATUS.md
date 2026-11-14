@@ -4,6 +4,7 @@
 Implement Daud's part of Balanced but Misleading: a reproducible extractive-briefing pipeline, finite reference checker, model execution/logging, analysis and figure generation.
 
 ## Canonical inputs
+- Full six-case specifications: `docs/development-scenarios.md`; exact current system prompts and payload boundaries: `docs/prompt-templates.md`. These are draft documentation, not integrated or independently reviewed experimental data. The paper retains only a summary and one worked example.
 - Team plan: https://docs.google.com/document/d/1UNlPj2cU38PA7VzWCqd9kOQzmgSEjc77aonBI545XrE/edit
 - Canonical paper: https://docs.google.com/document/d/1hWacDlUdl_Tlyz4ObjvRS0kho9pjLVJCCPKF1rrSXeU/edit . The research plan remains the scenario/review workspace. Relevant methods and six development specifications were transferred to the paper on 2026-11-14; no empirical results are claimed. Independent scenario and literature review remains pending.
 - Development fixture: `data/development.json`. Fictional lease example, unreviewed, unassigned valence, never held-out evidence.

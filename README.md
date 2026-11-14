@@ -6,7 +6,7 @@ This repository contains the research pipeline for Daud Ibrahim Hassan, Govardha
 
 The canonical team plan is [the Google Doc](https://docs.google.com/document/d/1UNlPj2cU38PA7VzWCqd9kOQzmgSEjc77aonBI545XrE/edit). Read [STATUS.md](STATUS.md) for current decisions and [docs/scenario-format.md](docs/scenario-format.md) for the data handoff.
 
-The canonical [paper draft](https://docs.google.com/document/d/1hWacDlUdl_Tlyz4ObjvRS0kho9pjLVJCCPKF1rrSXeU/edit) includes six development scenarios awaiting independent review. They have not yet been integrated into the pipeline dataset. This repository ships only the illustrative `lease_access_01` fixture. The Adaption export is not part of the experiment dataset.
+The canonical [paper draft](https://docs.google.com/document/d/1hWacDlUdl_Tlyz4ObjvRS0kho9pjLVJCCPKF1rrSXeU/edit) retains a scenario summary and one worked example. The [full six development specifications](docs/development-scenarios.md) and [current prompt templates](docs/prompt-templates.md) are documented here. Independent review is pending, and the six cases are not yet integrated into the pipeline dataset. This repository ships only the illustrative `lease_access_01` runnable fixture. The Adaption export is not part of the experiment dataset.
 
 ## Start here
 
