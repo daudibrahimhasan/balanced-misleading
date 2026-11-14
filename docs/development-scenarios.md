@@ -1,5 +1,7 @@
 # Development scenario specifications
 
+These preserve Elvina's original authored specifications. The current executable conversion is [pilot-cases.proposed.json](../data/pilot-cases.proposed.json), with newly proposed domains, formal formulas and review notes. Use the [protocol](PROTOCOL.md) and [Guru checklist](READY_FOR_GURU.md) for the prepared version; neither version has independent human sign-off yet.
+
 These are six fictional development specifications, not held-out evidence or measured results. Independent human review is pending. They are not yet integrated into the runnable dataset: `data/development.json` contains only the separate `lease_access_01` software fixture. Alternative domains for all other omittable facts and derived objectives remain to be reviewed before collection.
 
 Source: [paper draft](https://docs.google.com/document/d/1hWacDlUdl_Tlyz4ObjvRS0kho9pjLVJCCPKF1rrSXeU), revision `AHj4eMQbrS5jeYu2hnNwm1QPMcrhN2W_SG5hP-DwaSbCSzdGIek5illM8H-9CsCR9iO9K14z5InCJjT3CGEMfSOBPoDCzQoFiLUVWIQ8LpY`, exported 14 November 2026. This preserves the full scenario specifications previously in Appendix A; the paper retains a summary and one worked example.

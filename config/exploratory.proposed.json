@@ -1,0 +1,100 @@
+{
+  "status": "awaiting_guru",
+  "phase": "development",
+  "seed": 314159,
+  "repeats": 2,
+  "writer_repeats": 3,
+  "roles": {
+    "writer": {
+      "name": "DeepSeek V4.1 Flash",
+      "adapter": "openai_chat",
+      "endpoint": "",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "key_env": "STUDY_DEEPSEEK_KEY",
+      "max_output_tokens": 1000,
+      "max_request_usd": 0,
+      "parameters": {}
+    },
+    "receiver": {
+      "name": "Mistral Large 4",
+      "adapter": "openai_chat",
+      "endpoint": "",
+      "model": "mistralai/mistral-large-4-1t-a52b",
+      "key_env": "STUDY_MISTRAL_KEY",
+      "max_output_tokens": 1000,
+      "max_request_usd": 0,
+      "parameters": {}
+    },
+    "detector": {
+      "name": "Nemotron 3 Ultra",
+      "adapter": "openai_chat",
+      "endpoint": "",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "key_env": "STUDY_NEMOTRON_KEY",
+      "max_output_tokens": 1000,
+      "max_request_usd": 0,
+      "parameters": {}
+    }
+  },
+  "role_routes": {
+    "receiver": [
+      {
+        "name": "DeepSeek V4.1 Flash",
+        "adapter": "openai_chat",
+        "endpoint": "",
+        "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "key_env": "STUDY_DEEPSEEK_KEY",
+        "max_output_tokens": 1000,
+        "max_request_usd": 0,
+        "parameters": {}
+      },
+      {
+        "name": "Mistral Large 4",
+        "adapter": "openai_chat",
+        "endpoint": "",
+        "model": "mistralai/mistral-large-4-1t-a52b",
+        "key_env": "STUDY_MISTRAL_KEY",
+        "max_output_tokens": 1000,
+        "max_request_usd": 0,
+        "parameters": {}
+      },
+      {
+        "name": "Nemotron 3 Ultra",
+        "adapter": "openai_chat",
+        "endpoint": "",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b",
+        "key_env": "STUDY_NEMOTRON_KEY",
+        "max_output_tokens": 1000,
+        "max_request_usd": 0,
+        "parameters": {}
+      }
+    ],
+    "detector": [
+      {
+        "name": "Nemotron 3 Ultra",
+        "adapter": "openai_chat",
+        "endpoint": "",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b",
+        "key_env": "STUDY_NEMOTRON_KEY",
+        "max_output_tokens": 1000,
+        "max_request_usd": 0,
+        "parameters": {}
+      }
+    ]
+  },
+  "require_guru_go": true,
+  "guards": {
+    "max_requests": 1500,
+    "max_seconds": 90000,
+    "max_output_tokens_total": 1500000,
+    "max_reserved_usd": 25,
+    "timeout_seconds": 60
+  },
+  "api_routes_verified": false,
+  "notes": "PROPOSED. No launch authorization. Paid endpoints, credential variable bindings and request cost ceilings need verification before freezing. No credentials are stored here.",
+  "purpose": "balance_study",
+  "enumerate_reference_subsets": true,
+  "approval_file": "approval/guru-exploratory-go.json",
+  "require_competence_report": "approval/competence-result.json",
+  "balance_pass_epsilon": 0
+}

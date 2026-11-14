@@ -97,7 +97,7 @@ class FlowTests(unittest.TestCase):
         for j in jobs:
             self.assertNotIn("truth", j["user"])
             self.assertNotIn("expected_best", j["user"])
-            if j["role"] == "receiver" and j["metadata"]["condition"] != "full_evidence":
+            if j["role"] == "receiver" and j["metadata"]["condition"] in ("neutral", "promotional", "balanced_promotional"):
                 self.assertNotIn("stairs", j["user"])
             if j["role"] == "detector":
                 self.assertNotIn("matched_fact_id", j["user"])
@@ -144,8 +144,8 @@ class FlowTests(unittest.TestCase):
                  and r["context"] == "access_not_required"]
         self.assertTrue(all(r["incorrect_commitment"] == "1" and r["constraint_violation"] == "0" for r in wrong))
         with (self.run / "analysis" / "paired_family_contrasts.csv").open() as f:
-            contrast = next(r for r in csv.DictReader(f) if r["contrast"] == "promotional - neutral")
-        self.assertEqual(float(contrast["mean_family_delta"]), 0.5)
+            contrast = next(r for r in csv.DictReader(f) if r["contrast"] == "promotional - neutral" and r["context_index"] == "1")
+        self.assertEqual(float(contrast["mean_family_delta"]), 1.0)
         self.assertEqual(contrast["metric"], "incorrect_commitment")
 
     def test_frozen_config_and_jobs_cannot_change(self):

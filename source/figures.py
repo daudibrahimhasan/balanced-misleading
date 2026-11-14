@@ -23,7 +23,7 @@ def figures(run):
         writer = csv.DictWriter(f, fieldnames=["condition", "model", "violation_rate"])
         writer.writeheader()
         for r in rows:
-            writer.writerow({"condition": r["condition"], "model": r["model"] or "unspecified",
+            writer.writerow({"condition": r["condition"], "model": (r["model"] or "unspecified") + " / context " + r.get("context_index", "?"),
                              "violation_rate": r["incorrect_commitment_rate_valid"]})
     spec = {"chart_type": "grouped_bar", "title": title, "x": "condition", "y": "violation_rate",
             "group": "model", "y_format": "percent", "ylabel": "Incorrect commitment rate",

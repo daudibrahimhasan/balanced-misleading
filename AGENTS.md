@@ -13,4 +13,4 @@ Read `D:\Apart Sprint\AGENTS.md` and `D:\Apart Sprint\.codex\RESEARCH_WORKFLOW.m
 
 The live research plan is https://docs.google.com/document/d/1UNlPj2cU38PA7VzWCqd9kOQzmgSEjc77aonBI545XrE/edit . STATUS.md records implementation state. `data/development.json` is an illustrative development fixture, not reviewed research data or a held-out benchmark. Do not invent findings from smoke tests.
 
-No live inference is authorized by setup alone. Models, budgets, review, and scientific settings remain open. Preserve all attempts and never silently change settings in a run.
+The six executable proposals are in `data/pilot-cases.proposed.json`; none has human approval. Read `docs/READY_FOR_GURU.md` and `docs/PROTOCOL.md`. Models are selected, but budgets, final routes and scientific settings await Guru's review. Do not launch inference until his dated final go covers the exact material digest and case hashes. Both prepared approval records are false. Preserve all attempts and never silently change settings in a run.

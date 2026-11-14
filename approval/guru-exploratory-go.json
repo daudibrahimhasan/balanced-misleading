@@ -1,0 +1,9 @@
+{
+  "approved": false,
+  "reviewer": "Govardhan Reddy",
+  "reviewer_type": "human",
+  "date": "",
+  "material_digest": "a33bf3ce654861fd4d0576d065e38417e325cfcdbb1f5bd38c9c2ebd8402cd17",
+  "reviewed_case_hashes": [],
+  "evidence": "Pending actual human review and explicit final go. Never set approved on the strength of AI checks."
+}

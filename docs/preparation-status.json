@@ -1,0 +1,27 @@
+{
+  "status": "awaiting_guru",
+  "live_requests": 0,
+  "competence_plan": "D:\\Apart Sprint\\AI x Epistemics Research Sprint\\results\\guru-review-20261114T072637363860Z\\competence",
+  "exploratory_plan": "D:\\Apart Sprint\\AI x Epistemics Research Sprint\\results\\guru-review-20261114T072637363860Z\\exploratory",
+  "competence_receiver_calls": 42,
+  "exploratory_writer_calls": 54,
+  "exploratory_receiver_calls": 936,
+  "exploratory_detector_calls": 312,
+  "exploratory_total_calls": 1302,
+  "estimated_cost_usd": null,
+  "budget_ceiling_usd": 30,
+  "blocking_inputs": [
+    "Guru human review and final go",
+    "Verified paid endpoints and credential bindings",
+    "Verified per-request cost ceilings",
+    "Competence result before exploratory collection"
+  ],
+  "case_spec_hashes": {
+    "lease_deposit_01": "61d3aba12b245a75f2139a574113dc9e1b6440a046ff3b94e95b741d61b15945",
+    "job_health_01": "3c2882ab168ff996b1bbdd04412a58735e402f7618f349ded1b70402f85c3093",
+    "job_schedule_01": "919e07e9ccffa9e75dd3cbcc2e2107a4e65b7bb50c568cda17e060281822d829",
+    "lease_parking_01": "aab137cc487c06d6b7180775bc3a89c3806b8ba181dcd7cc49fc57245352be88",
+    "lease_break_01": "c636b02bc395c5076c75e19f644251466410eb88b014d8fd973334a3ea6db472",
+    "job_moving_01": "3b3b09f5f59664a645e3c2ca01aca98a10f1751d3b1e3edb17bb1566815c4e40"
+  }
+}
