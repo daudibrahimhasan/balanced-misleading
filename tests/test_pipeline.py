@@ -10,7 +10,7 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "source"))
 import pipeline
 from study import (choose, coverage, critical, digest, load, parse_output, possible_choices,
-                   read_lines, render, save, validate)
+                   public_facts, read_lines, render, save, validate, warranted_actions)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -53,6 +53,18 @@ class ReferenceTests(unittest.TestCase):
         self.assertNotIn("stairs", text)
         with self.assertRaises(ValueError):
             render(self.case, ["F1", "F1"])
+        self.assertEqual(render(self.case, ["F2", "F1"]), text)
+
+    def test_common_optimum_under_ties_and_fact_boundaries(self):
+        self.assertEqual(warranted_actions([("A",), ("A", "B")]), ["A"])
+        self.assertEqual(warranted_actions([("A",), ("B",)]), [])
+        self.assertEqual(warranted_actions([(), ()]), ["neither"])
+        self.assertEqual(warranted_actions([(), ("A",)]), [])
+        self.assertTrue(all(set(f) == {"id", "text"} for f in public_facts(self.case)))
+        c = copy.deepcopy(self.case)
+        del c["facts"][0]["alternatives"]
+        with self.assertRaises(ValueError):
+            validate([c])
 
 
 class FlowTests(unittest.TestCase):
@@ -74,6 +86,10 @@ class FlowTests(unittest.TestCase):
         pipeline.import_answers(self.run, self.run / "writer_jobs.jsonl", answers)
 
     def test_offline_flow_and_information_boundaries(self):
+        for j in read_lines(self.run / "writer_jobs.jsonl"):
+            payload = json.loads(j["user"])
+            self.assertNotIn("recipient", payload)
+            self.assertNotIn("step-free access are mandatory", j["user"])
         self.import_writer()
         pipeline.prepare(self.run)
         jobs = read_lines(self.run / "evaluation_jobs.jsonl")
@@ -100,6 +116,37 @@ class FlowTests(unittest.TestCase):
         self.assertTrue(all(r["ci_low"] == "" for r in contrasts))
         with self.assertRaises(ValueError):
             pipeline.import_answers(self.run, self.run / "evaluation_jobs.jsonl", answers)
+
+    def test_feasible_wrong_choices_drive_primary_contrast(self):
+        self.import_writer()
+        pipeline.prepare(self.run)
+        case = load(ROOT / "data" / "development.json")[0]
+        records = []
+        for j in read_lines(self.run / "evaluation_jobs.jsonl"):
+            meta = j["metadata"]
+            ctx = next(c for c in case["contexts"] if c["id"] == meta["context"])
+            if j["role"] == "receiver":
+                action = choose(case, ctx)["best"][0]
+                if meta["condition"] == "promotional" and ctx["id"] == "access_not_required":
+                    action = "B"  # Feasible, but costs more than A.
+                parsed = {"action": action}
+            else:
+                parsed = {"critical_missing_fact_ids": []}
+            records.append(json.dumps({"job_id": j["id"], "raw_text": json.dumps(parsed)}))
+        answers = Path(self.temp.name) / "answers.jsonl"
+        answers.write_text("\n".join(records), encoding="utf-8")
+        pipeline.import_answers(self.run, self.run / "evaluation_jobs.jsonl", answers)
+        pipeline.analyze(self.run)
+        import csv
+        with (self.run / "analysis" / "episodes.csv").open() as f:
+            rows = list(csv.DictReader(f))
+        wrong = [r for r in rows if r["role"] == "receiver" and r["condition"] == "promotional"
+                 and r["context"] == "access_not_required"]
+        self.assertTrue(all(r["incorrect_commitment"] == "1" and r["constraint_violation"] == "0" for r in wrong))
+        with (self.run / "analysis" / "paired_family_contrasts.csv").open() as f:
+            contrast = next(r for r in csv.DictReader(f) if r["contrast"] == "promotional - neutral")
+        self.assertEqual(float(contrast["mean_family_delta"]), 0.5)
+        self.assertEqual(contrast["metric"], "incorrect_commitment")
 
     def test_frozen_config_and_jobs_cannot_change(self):
         save(self.run / "config.json", {**self.config, "seed": 2})

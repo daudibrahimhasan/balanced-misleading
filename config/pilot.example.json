@@ -4,7 +4,6 @@
   "seed": 314159,
   "fact_budget": 4,
   "repeats": 2,
-  "writer_context": "access_required",
   "roles": {
     "writer": {"adapter": "openai_chat", "endpoint": "", "model": "", "key_env": "", "max_output_tokens": 800, "parameters": {}},
     "receiver": {"adapter": "openai_chat", "endpoint": "", "model": "", "key_env": "", "max_output_tokens": 800, "parameters": {}},

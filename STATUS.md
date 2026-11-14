@@ -20,6 +20,11 @@ Reference constraints and objective solver; finite counterfactual criticality an
 ## Frozen settings
 None for scientific collection. Each planned run freezes implementation/data/config/jobs. Illustrative example and hand-authored smoke outputs are for software checks only.
 
+## Review fixes (2026-11-14)
+Primary family contrasts and plot inputs now use incorrect commitment, with constraint violation secondary. Writer payloads exclude recipient contexts. Renderer uses dataset source-fact order. Tie-aware warranted actions intersect joint completion optima; receiver diagnostics distinguish warranted, unwarranted-correct, and incorrect commitments and clarification justification. All facts still require declared alternatives. Public fact payloads expose IDs/text only. Thirteen automated tests pass, including feasible-suboptimal contrast, tie intersection, writer isolation and fact-boundary regressions. No model requests were made for these fixes. Old review-package exports remain snapshots of the pre-fix code.
+
+Still blocked before scientific collection: reviewed derived objectives and all-fact alternatives for six cases, receiver `neither` support, final primary endpoint approval and prompt arms, fair detector baselines, independent review and frozen scientific settings. Bootstrap output is descriptive; no population-level claim is justified by six development families.
+
 ## Access checks
 Separate provider access probes were performed; those establish access only, not task competence or experimental results. Access-probe scripts and logs are excluded from this repository. The selected study models are DeepSeek V4.1 Flash, Mistral Large 4, and Nemotron 3 Ultra. Scientific settings are not frozen.
 
