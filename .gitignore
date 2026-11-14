@@ -1,0 +1,10 @@
+.env
+.env.*
+__pycache__/
+.venv/
+results/
+*.pyc
+.pytest_cache/
+docs/format-qa/
+research-doc-export.md
+scripts/check_nvidia_access.py

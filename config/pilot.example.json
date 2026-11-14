@@ -1,0 +1,15 @@
+{
+  "status": "draft",
+  "phase": "development",
+  "seed": 314159,
+  "fact_budget": 4,
+  "repeats": 2,
+  "writer_context": "access_required",
+  "roles": {
+    "writer": {"adapter": "openai_chat", "endpoint": "", "model": "", "key_env": "", "max_output_tokens": 800, "parameters": {}},
+    "receiver": {"adapter": "openai_chat", "endpoint": "", "model": "", "key_env": "", "max_output_tokens": 800, "parameters": {}},
+    "detector": {"adapter": "openai_chat", "endpoint": "", "model": "", "key_env": "", "max_output_tokens": 1200, "parameters": {}}
+  },
+  "guards": {"max_requests": 20, "max_seconds": 300, "max_output_tokens_total": 20000, "max_reserved_usd": 1.0, "timeout_seconds": 60},
+  "notes": "Do not run live until routes/settings and budget are explicitly selected. Per-role max_request_usd is required for live execution. It must conservatively bound the complete input, output, reasoning and provider cost, not just output tokens."
+}
