@@ -1,0 +1,157 @@
+[
+  {
+    "case": "lease_deposit_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "8ab62039a45099a2570ff1cd654514104e18b3749712754d9795e06980011175"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.\nOffer B includes 15 days of paid time off per year.",
+    "id": "0b15152a71982c99d13ba8dbf08fa066f47e10e7c2379abe709c204965b2424a"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer A is a full-time position of 40 hours per week.\nOffer B is a full-time position of 40 hours per week.\nOffer A's office has free on-site parking.\nOffer B includes a paid training program in the first month.\nOffer B's office is next to a bus stop.",
+    "id": "356e837a5f46dc856a5d0ccc22b56e6f43acb571a20e5c8af2132057905516e9"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has a dishwasher.\nApartment B has a private balcony.\nApartment B is a ten-minute walk from a park.",
+    "id": "4f1c4cfca262ea751cb7685c52eff3f83dab438b9c9f29dfbd63c9cb0f5c9e0b"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A includes a private storage locker.\nApartment B's building has a gym.",
+    "id": "68541dd4800e9b70aaa7b78d3340e7c5c04cae69571177c1ef2721aaf0c51445"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A's team works a compressed four-day week.\nOffer B includes a formal mentorship program.",
+    "id": "9e42290d087316b5682a0530a58faad9fcf5b72290fe97acc6cd8ef88c79f1f0"
+  },
+  {
+    "case": "control_neither",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance begins after a 90-day waiting period.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.\nOffer B includes 15 days of paid time off per year.",
+    "id": "82cb86ab6f52408dd283782ecb47f705307da632e798d6ef22e9a1d7cf65da69"
+  },
+  {
+    "case": "control_tie",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nParking at Apartment B costs $100 per month for one space.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has a dishwasher.\nApartment B has a private balcony.\nApartment B is a ten-minute walk from a park.",
+    "id": "7c553721425bcb4aab8b9da5bcc2d7a762db4157b29234005f909758af457166"
+  }
+]

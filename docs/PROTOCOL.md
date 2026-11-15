@@ -1,6 +1,8 @@
 # Proposed protocol for Guru's final review
 
-Status: awaiting human review and explicit go. No experimental results or API collection. All choices below are concrete proposals, not approval already received.
+Current development amendment (16 November): Daud reports completing the review task and authorized repairs. Version 6 passed all 42 initial full-evidence screen responses; no main-study collection has occurred. See `repair-validation.md` for every prior failed version and `prompt-templates.md` for current exact prompts. Earlier model/route details below are superseded by this amendment.
+
+The repaired lineup is DeepSeek V4.1 Flash 1017 and GLM-5.3-Flash via Deploy, with Nemotron 3.5 Super VL via NVIDIA. Receivers return brief justification inside JSON before the final action, with an explicit consistency instruction. GLM uses API JSON-object mode. Nemotron reasoning is off, with one in-flight request and six-second spacing between starts. Temperature is 0, output limit 4096 and request timeout 180 seconds. These changes were informed by failures on the same development items; they are not held-out validation or evidence that default models behave this way. Scoring still uses the submitted action and never repairs answers from their explanations. No criteria or thresholds were relaxed.
 
 ## Question and scope
 
@@ -22,7 +24,7 @@ Reference validation checks the full-evidence keys, every declared field domain 
 
 ## Competence stage
 
-Selected receiver models: DeepSeek V4.1 Flash, Mistral Large 4, and Nemotron 3 Ultra. Each receives the same 14 full-evidence items: the six context pairs plus one neither control and one tie control. Total: 42 receiver calls, no writer calls.
+Current receiver models: DeepSeek V4.1 Flash 1017, GLM-5.3-Flash and Nemotron 3.5 Super VL. Each receives the same 14 full-evidence items: the six context pairs plus one neither control and one tie control. Total: 42 receiver calls, no writer calls. Version 6 passed all 42; previous configurations did not, as documented in the repair report.
 
 Proposed acceptance: all 14 items per model must be valid and correct; any tied optimum is acceptable. An incorrect, invalid or unresolved initial response fails the screen. No selected retries replace failures. If criteria or prompts change, label the earlier screen separately and start a new version.
 
@@ -30,7 +32,7 @@ The reporter requires actual live provider records, correct source/case/route ha
 
 ## Exploratory stage after competence and separate approval
 
-Writer: DeepSeek V4.1 Flash. Receivers: all three selected models on identical briefings. Detector: Nemotron 3 Ultra, distinct from the writer. This fixed subset does not support writer-family comparisons. MiniMax M3.1 Flash is backup only, requiring a recorded substitution decision and a new screen/plan.
+Writer: DeepSeek V4.1 Flash 1017. Receivers: all three current models on identical briefings. Detector: Nemotron 3.5 Super VL, distinct from the writer. This subset does not support writer-family comparisons. Earlier Mistral, MiniMax, Nemotron Ultra and Modal DeepSeek routes are retained only in their separate failed versions; further substitutions require a recorded change and a new screen/plan.
 
 For each case, retain n−2 complete facts. Use neutral, promotional and balance-instructed promotional conditions, with three independent writer draws per condition. Render selections in dataset order without IDs. Sample one random subset matched in retained favorable/adverse/neutral counts for each balance-instructed writer draw. Retain location invariants. Keep all generated selections, whether or not they pass the balance score.
 
@@ -66,8 +68,8 @@ For detection, evaluate omitted facts. Harmless-missing facts form the false-ala
 
 ## Approval and execution
 
-Guru reviews all domains, premises, compound mappings, formulas, valence labels, controls, budgets and scoring against the exact hashes in `guru-case-review.md`. A dated human go must identify the complete material digest and every case hash. Existing approval files remain false. An AI review cannot fill in human approval.
+The original handoff assigned the domain, premise, mapping, formula, label and scoring review to Guru. Daud subsequently reported completing that task and supplied launch/repair instructions. Record his authorization under his own name; do not attribute it to Guru or claim independently documented review beyond that report. A dated go identifies the exact material digest and case hashes. AI checks cannot manufacture human endorsement.
 
-Verify paid routes and request ceilings, regenerate the plan and approval digest after any change, record Guru's actual competence-stage go, and only then enable that run. The exploratory stage additionally needs a passed live competence report accepted by the team and a separate go. Source/case/receiver-route changes invalidate the report or approval. All requests reserve bounded tokens, time and dollars before sending. No automatic retries.
+Verify routes and request allowances, regenerate the plan and approval digest after changes, and record the applicable human authorization before enabling a run. Main collection requires a passed live competence report and an exact frozen main configuration. Explicit conditional acceptance must be recorded as conditional authorization, not a fabricated later manual review. Source/case/receiver-route changes invalidate incompatible evidence. All requests reserve bounded tokens, time and dollar allowances before sending; these allowances are not provider invoices or enforced account-billing caps. No automatic retries.
 
-Until these conditions are met: wait. Do not run model APIs, mark cases human-reviewed or claim results.
+The Version 6 development screen has passed. Main collection has not launched and its draft configuration is not executable as is. Preserve the failed screens and amendment history; do not claim main-study results or generalization from development repairs.

@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-15T18:42:13.583814+00:00",
+  "source_hash": "197aa5facbe77040df80d0ca602d95f60bd2228be6322f12d04d7b9de40f6837",
+  "cases_hash": "281e7b8092743129e3559144097255b63b012b8582721b5dd6f9044510fa9c7d",
+  "config_hash": "057e219c582874b62fb01bd231c4d15e1573b774b7354259b7f0a0112f8154e1",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "phase": "development",
+  "kind": "planned_not_executed",
+  "study": "balanced-but-misleading",
+  "approval_material_digest": "039ca47adfdc2e82d97cd5981f657448e503e3e8aae61d09f110dbfa24a3bc04",
+  "writer_jobs_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

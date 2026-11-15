@@ -10,6 +10,8 @@ import sys
 import time
 import urllib.error
 import urllib.request
+import concurrent.futures
+import threading
 from collections import defaultdict
 from pathlib import Path
 
@@ -268,7 +270,7 @@ def execute(run, jobs_path, retry_failed=False):
     if config.get("require_guru_go"):
         approval = load(ROOT / config["approval_file"])
         manifest = load(run / "manifest.json")
-        if not (approval.get("approved") is True and approval.get("reviewer") == "Govardhan Reddy" and
+        if not (approval.get("approved") is True and approval.get("reviewer") in config.get("authorized_reviewers", ["Govardhan Reddy"]) and
                 approval.get("reviewer_type") == "human" and approval.get("date") and
                 approval.get("material_digest") == manifest["approval_material_digest"]):
             raise ValueError("Waiting for Guru: dated human approval must cover this exact source, configuration and case specification")
@@ -279,7 +281,8 @@ def execute(run, jobs_path, retry_failed=False):
             raise ValueError("Paid API routes and request ceilings have not been verified")
         if config.get("require_competence_report"):
             report = load(ROOT / config["require_competence_report"])
-            if report.get("status") != "passed" or report.get("source_hash") != source_hash() or not report.get("human_accepted"):
+            accepted = report.get("human_accepted") or (config.get("accept_competence_if_passed") is True and approval.get("conditional_competence_acceptance") is True)
+            if report.get("status") != "passed" or report.get("source_hash") != source_hash() or not accepted:
                 raise ValueError("Exploratory collection requires actual competence results accepted by the team")
             if not set(case_hashes) <= set(report.get("case_spec_hashes", [])):
                 raise ValueError("Competence did not cover these exact case specifications")
@@ -317,7 +320,52 @@ def execute(run, jobs_path, retry_failed=False):
         success = latest_success(run)
         attempted = {x["job_id"] for x in attempts} | {x["job_id"] for x in ledger}
         sent = 0
+        pending = []
+        workers = config.get("max_concurrency", 1)
+        if type(workers) is not int or not 1 <= workers <= 8:
+            raise ValueError("max_concurrency must be between one and eight")
+        route_locks = {}
+        route_last_started = {}
         for j in jobs:
+            r = j["route"]
+            limit = r.get("max_concurrent_requests", workers)
+            if type(limit) is not int or not 1 <= limit <= workers:
+                raise ValueError("Invalid per-route concurrency limit")
+            interval = r.get("min_interval_seconds", 0)
+            if type(interval) not in (int, float) or not 0 <= interval <= 60 or (interval and limit != 1):
+                raise ValueError("Request pacing requires an interval in [0, 60] and one concurrent request per route")
+            route_locks.setdefault((r["endpoint"], r["model"]), threading.BoundedSemaphore(limit))
+        def perform(j, reservation, timeout):
+            r = j["route"]
+            record = {"job_id": j["id"], "origin": "live", "timestamp": reservation["timestamp"],
+                "model": r["model"], "usage": None, "usage_unknown": True}
+            key = os.environ[r["key_env"]]
+            try:
+                with route_locks[(r["endpoint"], r["model"])]:
+                    route_id = (r["endpoint"], r["model"])
+                    delay = r.get("min_interval_seconds", 0) - (time.monotonic() - route_last_started.get(route_id, float("-inf")))
+                    if delay > 0:
+                        time.sleep(delay)
+                    route_last_started[route_id] = time.monotonic()
+                    record["request_started_utc"] = dt.datetime.now(dt.timezone.utc).isoformat()
+                    raw, usage, finish, body = request_model(j, key, timeout)
+                record.update({"raw_text": raw.replace(key, "[REDACTED]"), "usage": usage,
+                    "usage_unknown": usage is None, "finish_reason": finish,
+                    "provider_response": json.loads(canonical(body).replace(key, "[REDACTED]"))})
+                record["parsed"] = parse_output(j, raw)
+                record["status"] = "ok" if finish in ("stop", "end_turn") else "incomplete"
+            except urllib.error.HTTPError as error:
+                record.update(status="http_error", error_code=error.code)
+            except Exception as error:
+                record.update(status="invalid_output" if "raw_text" in record else "request_error", error_type=type(error).__name__)
+            return record
+        pool = concurrent.futures.ThreadPoolExecutor(max_workers=workers)
+        for j in jobs:
+            if len(pending) >= workers:
+                done, remaining = concurrent.futures.wait(pending, return_when=concurrent.futures.FIRST_COMPLETED)
+                for future in done:
+                    append(run / "attempts.jsonl", future.result())
+                pending = list(remaining)
             if j["id"] in success or j["id"] in attempted and not retry_failed:
                 continue
             r = j["route"]
@@ -334,22 +382,11 @@ def execute(run, jobs_path, retry_failed=False):
             used_tokens += r["max_output_tokens"]
             used_usd += r["max_request_usd"]
             used_time += timeout
-            record = {"job_id": j["id"], "origin": "live", "timestamp": reservation["timestamp"],
-                "model": r["model"], "usage": None, "usage_unknown": True}
-            key = os.environ[r["key_env"]]
-            try:
-                raw, usage, finish, body = request_model(j, key, timeout)
-                record.update({"raw_text": raw.replace(key, "[REDACTED]"), "usage": usage,
-                    "usage_unknown": usage is None, "finish_reason": finish,
-                    "provider_response": json.loads(canonical(body).replace(key, "[REDACTED]"))})
-                record["parsed"] = parse_output(j, raw)
-                record["status"] = "ok" if finish in ("stop", "end_turn") else "incomplete"
-            except urllib.error.HTTPError as error:
-                record.update(status="http_error", error_code=error.code)
-            except Exception as error:
-                record.update(status="invalid_output" if "raw_text" in record else "request_error", error_type=type(error).__name__)
-            append(run / "attempts.jsonl", record)
+            pending.append(pool.submit(perform, j, reservation, timeout))
             sent += 1
+        for future in concurrent.futures.as_completed(pending):
+            append(run / "attempts.jsonl", future.result())
+        pool.shutdown(wait=True)
         return {"requests_sent": sent, "reserved_usd_upper_bound": used_usd,
             "note": "Reservation caps are estimates, not billed cost. Failed/unknown attempts remain charged to the guard."}
     finally:

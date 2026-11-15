@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "human_accepted": false,
+  "source_hash": "197aa5facbe77040df80d0ca602d95f60bd2228be6322f12d04d7b9de40f6837",
+  "competence_run": "D:\\Apart Sprint\\AI x Epistemics Research Sprint\\results\\repair-v6-screen-20261115T184213Z",
+  "by_model": {
+    "deepseek-ai/deepseek-v4.1-flash-1017": {
+      "planned": 14,
+      "valid": 14,
+      "correct": 14,
+      "live_evidence": 14
+    },
+    "zai-org/glm-5.3-flash": {
+      "planned": 14,
+      "valid": 14,
+      "correct": 14,
+      "live_evidence": 14
+    },
+    "nvidia/nemotron-3.5-super-vl-120b-a12b": {
+      "planned": 14,
+      "valid": 14,
+      "correct": 14,
+      "live_evidence": 14
+    }
+  },
+  "case_spec_hashes": [
+    "61d3aba12b245a75f2139a574113dc9e1b6440a046ff3b94e95b741d61b15945",
+    "3c2882ab168ff996b1bbdd04412a58735e402f7618f349ded1b70402f85c3093",
+    "919e07e9ccffa9e75dd3cbcc2e2107a4e65b7bb50c568cda17e060281822d829",
+    "aab137cc487c06d6b7180775bc3a89c3806b8ba181dcd7cc49fc57245352be88",
+    "c636b02bc395c5076c75e19f644251466410eb88b014d8fd973334a3ea6db472",
+    "3b3b09f5f59664a645e3c2ca01aca98a10f1751d3b1e3edb17bb1566815c4e40",
+    "50d6eec2d673fac76a7f03344e67fceb8e9d8cb3e77b5dda4b46bb7b615a1402",
+    "774d4720ac9864453d5d70ee4a4fa26f4f3cc0729b78da918ea2a05dfa6f1e1e"
+  ],
+  "receiver_route_hashes": [
+    "2b7f936a86b8ab37c0e79846a5bd8d3d6db68867331add3f5dbb35c56a5bfefc",
+    "973aac81e9322aa42305b469c9bbe2c8eed9cb3fa5fb68a45a33f88a4fc33dc9",
+    "9ec2048faff7a7cbc3fd6bcc43d2615a306cb0db47bc7fbad7116442c424c633"
+  ],
+  "criteria": "100% valid and full-evidence correct across every preplanned item and model, with live provider evidence. A tied optimum permits any best option. No post-hoc reruns to replace failed items.",
+  "note": "Passing is a software-computed screen, not human acceptance or an omission-study result."
+}

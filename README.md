@@ -4,13 +4,15 @@
 
 Daud Ibrahim Hassan, Govardhan Reddy, and Elvina Chow.
 
-## Current status: waiting for Guru
+## Current status: development competence screen passed
 
-Six fictional development cases are implemented as **proposed, unreviewed specifications**. All 23 automated tests pass. A multi-model offline workflow check exercised 54 writer fixtures and 1,248 evaluation fixtures. Those answers were hand-authored software fixtures, not model results.
+Six fictional development cases have executable specifications. Daud reports completing the human review task. The repaired Version 6 screen returned 42/42 valid, correct initial responses: DeepSeek V4.1 Flash 1017, GLM-5.3-Flash and Nemotron 3.5 Super VL each passed 14/14. All 26 software tests pass. These are development-screen observations, not main-study results or held-out validation.
 
-No study API calls have been made. Both approval records remain false. Paid endpoints, credential bindings and per-request cost ceilings are explicitly unset; they must be verified before a run is approved.
+Earlier failed screens remain separate; no failed item was replaced by a successful retry. [Repair validation](docs/repair-validation.md) records the checkpoint/route, JSON-format and request-pacing changes. The main omission experiment has not run. Reservation allowances are not provider invoices or guaranteed spending limits.
 
-Start with [Guru's review checklist](docs/READY_FOR_GURU.md) and the [proposed protocol](docs/PROTOCOL.md).
+[Version 6 evidence](data/competence-v6) includes the 42 raw provider responses, frozen jobs/settings, cases, request reservations and computed screen report. No credentials or authorization headers are included.
+
+Start with [the current repair report](docs/repair-validation.md), [protocol](docs/PROTOCOL.md) and [status](STATUS.md). [Guru's original checklist](docs/READY_FOR_GURU.md) is retained as the earlier handoff.
 
 - [Team planning doc](https://docs.google.com/document/d/1UNlPj2cU38PA7VzWCqd9kOQzmgSEjc77aonBI545XrE/edit)
 - [Canonical paper](https://docs.google.com/document/d/1hWacDlUdl_Tlyz4ObjvRS0kho9pjLVJCCPKF1rrSXeU/edit)
