@@ -39,7 +39,11 @@ The new offline audit is scripts/premise_boundary_audit.py; its outputs are in
 docs/reviews/premise-boundary-20261116. Frozen evidence and source remain unchanged.
 
 The revised native manuscript and clean 13-page PDF are verified, including the
-221-word abstract, original result table/figure, references and authors. All 41
+201-word abstract, original result table/figure, references and authors. All 41
 frozen evidence hashes match. The new offline audit reproduces the reported counts.
 Next: final coauthor review of the reframed interpretation and independent human
 coding of the 19 justifications. No new inference or external submission is claimed.
+
+Finding-led revision: abstract, introduction and conclusion now lead with the
+completed experiment and observed false-rejection finding. Counts, post hoc
+status and premise sensitivity remain explicit. No new model calls were made.

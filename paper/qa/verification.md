@@ -6,7 +6,7 @@ and labels the reframe, exclusion sensitivity and rationale inspection as post h
 The original comparisons remain; the raw run and source are unchanged.
 
 The PDF has 13 pages: eight main, two references, three appendices. Its abstract is
-221 words. All pages were reviewed in a contact sheet, with the main results and
+201 words. All pages were reviewed in a contact sheet, with the main results and
 conclusion inspected at readable size. The result table and original figure remain
 as-run. No visible tracked proofreading text or blank pages were found. The
 current two-author heading and contribution statement credit Elvina's review.
@@ -21,3 +21,7 @@ The old PDF remains in Git history (commit e5f48e6); the manifest records its ha
 The revised native Doc, PDF and Markdown disclose the same scientific correction.
 This verification is not final coauthor approval, independent human validation,
 peer review, publication or confirmed external submission.
+
+Finding-led revision: abstract, introduction and conclusion now lead with the
+completed experiment and observed false-rejection finding. Counts, post hoc
+status and premise sensitivity remain explicit. No new model calls were made.
