@@ -1,26 +1,23 @@
-# Final report verification
+# Revised report verification, 16 November 2026
 
-16 November 2026. The exported PDF has 13 pages: 8 main, 2 references, 3 appendices.
-Abstract: 194 words. Authors: Daud Ibrahim Hassan and Elvina Chow. Guru/Govardhan
-is absent from the paper and author contribution statement.
+The live Google Doc is canonical. This revision describes the executed partially
+observed qualification task, explicitly discloses the authored-premise mismatch,
+and labels the reframe, exclusion sensitivity and rationale inspection as post hoc.
+The original comparisons remain; the raw run and source are unchanged.
 
-The current official Apart template was read through the connector. The report
-retains its title/author/abstract layout and section structure. The required
-Limitations and Dual-Use / Ethical Considerations appendix and preexisting-tool
-statement are present. APA author-date references use hanging indents, double
-spacing and italic titles/venues. Reference entries do not split across pages.
+The PDF has 13 pages: eight main, two references, three appendices. Its abstract is
+221 words. All pages were reviewed in a contact sheet, with the main results and
+conclusion inspected at readable size. The result table and original figure remain
+as-run. No visible tracked proofreading text or blank pages were found. The
+current two-author heading and contribution statement credit Elvina's review.
 
-Every page was rendered. The title/author page, results table/figure, discussion,
-reference layout and ethics appendix were visually inspected. No blank pages,
-placeholder markers or clipped table cells remain. The results table matches the
-frozen CSVs. The abstract, detector operating points, outcome decomposition and
-family contrast values were checked against the final audit tables.
+The new offline audit reproduces 17/18; 13/18 to 4/18; 3/18, all 19 false-neither
+outputs, four families, ten packet IDs and seven distinct briefing/context inputs.
+All 19 public justifications were read with LLM assistance and cite missing
+qualification evidence. This semantic assessment awaits independent human coding.
+The lexical CSV screen is not a replacement. All 41 packaged evidence hashes match.
 
-The live document was receiving unresolved proofreading suggestions. A technical
-replacement of false neither with false-negative was rejected in the clean
-snapshot. The exported PDF contains no combined suggested/deleted terms or old
-author names. The editable live Doc can receive later coauthor edits; the PDF and
-Markdown snapshot are the version sent for review.
-
-This is automated numerical and document verification. It does not establish
-independent human validation, final coauthor approval, peer review or submission.
+The old PDF remains in Git history (commit e5f48e6); the manifest records its hash.
+The revised native Doc, PDF and Markdown disclose the same scientific correction.
+This verification is not final coauthor approval, independent human validation,
+peer review, publication or confirmed external submission.

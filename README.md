@@ -18,15 +18,30 @@ experiment with tuned prompts, not held-out validation or a general model rankin
 - [Remaining review](docs/FINAL_REVIEW.md)
 - [Team plan](https://docs.google.com/document/d/1UNlPj2cU38PA7VzWCqd9kOQzmgSEjc77aonBI545XrE/edit)
 
-## Main observation
+## Main observation and post-collection correction
 
-All 18 balance-instructed packets pass the simple selection-balance diagnostic,
-yet 17 omit a critical fact in the sensitive context and 13 in the comparison
-context. Sensitive-context incorrect commitments are 0/35 for DeepSeek, 10/36 for
-GLM and 4/36 for Nemotron; nine of those fourteen errors are false neither responses.
-Balance-instructed versus matched random comparisons are mixed. The LLM detector
-has 26.1% exact-set agreement, compared with 52.5% for the static rule-topic baseline;
-recall and false-alarm trade-offs are reported separately.
+The completed run tests a partially observed qualification task. A post-collection
+review by Elvina found that the conversion withheld some setup assertions that her
+authored cases established as known. The revised paper reports that executed task;
+it does not present the new interpretation as a prespecified hypothesis.
+
+Of 930 valid receiver responses, 19 select neither even though a qualifying option
+exists. All 19 public justifications cite missing qualification evidence: 13 GLM
+outputs and six Nemotron outputs, across four families and seven distinct
+briefing/context inputs. This is an output-level diagnosis with LLM-assisted
+inspection, not independent human coding or a proven internal mechanism.
+
+All 18 balance-instructed packets omit only neutral-labeled facts; none omits the
+planted candidate or paired fact. The as-run critical-omission counts are 17/18
+sensitive and 13/18 comparison. Excluding the reviewer-identified setup facts
+reduces them to **4/18 and 3/18**. This is a label sensitivity analysis, not a
+corrected receiver experiment. Original condition contrasts remain mixed.
+
+[Premise audit, exclusions and all 19 justifications](docs/reviews/premise-boundary-20261116).
+The frozen run is unchanged. The contribution is a reproducible separation of
+selection balance, qualification evidence and abstention semantics, including the
+effect of task conversion on the headline. No general promotional effect or
+failure of the full JANUS framework is established.
 
 ![Incorrect commitments by model and context](figures/results/incorrect-commitments/figure.png)
 
@@ -62,6 +77,7 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 python source/pipeline.py analyze data/main-v6
 python scripts/final_report_audit.py --run data/main-v6
+python scripts/premise_boundary_audit.py
 ```
 
 Analysis does not require provider credentials. Do not rerun generators over the

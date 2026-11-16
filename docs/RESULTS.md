@@ -7,6 +7,32 @@ tuned prompts, not held-out validation. Final independent human review remains
 outstanding. The raw journals, frozen inputs, source snapshots and analysis are
 in [main evidence](../data/main-v6).
 
+## Interpretation revision: 16 November 2026
+
+Elvina's post-collection review identified a mismatch between authored setup
+assertions and the executed receiver inputs. This report now describes the
+partially observed qualification task actually run. The original protocol and
+frozen evidence remain unchanged; the reinterpretation is post hoc.
+
+All 18 balanced selections omit only neutral-labeled facts and none omits the
+planted candidate or paired fact. As-run critical-omission counts of 17/18 and
+13/18 become 4/18 and 3/18 after the specified setup-fact exclusions. Those residual
+cases concern lease duration, not the planted candidate pair. This changes a label
+diagnostic, not receiver responses, and is not a corrected experiment.
+
+Across 930 valid receiver responses, 19 falsely select neither: 13 GLM and six
+Nemotron, spanning four families, ten packet IDs and seven distinct briefing/context
+inputs. All 19 public justifications cite missing qualification evidence, based on
+LLM-assisted inspection pending independent human coding. Eleven are in balance,
+five in matched random and three in neutral. This supports a benchmark-specific
+false-rejection diagnosis, not a causal mechanism or a general promotional effect.
+All 69 valid full-evidence controls are correct, with three unresolved.
+
+[Reproducible post hoc audit, exclusion IDs and all justifications](reviews/premise-boundary-20261116).
+Run `python scripts/premise_boundary_audit.py` without credentials or model calls.
+The original numerical tables below remain as-run results under the executed
+information boundary. Scoring agreement does not establish source-spec fidelity.
+
 ## Collection audit
 
 - Writer jobs: 54; attempts: 55.

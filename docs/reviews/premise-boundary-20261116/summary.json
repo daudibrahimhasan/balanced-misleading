@@ -1,0 +1,102 @@
+{
+  "scope": "Post hoc as-run audit; no corrected receiver experiment; no independent rationale coding.",
+  "valid_receivers": 930,
+  "false_neither": 19,
+  "distinct_inputs": 7,
+  "packet_ids": 10,
+  "families": {
+    "lease_deposit": 4,
+    "job_schedule": 12,
+    "lease_parking": 1,
+    "job_moving": 2
+  },
+  "models": {
+    "zai-org/glm-5.3-flash": 13,
+    "nvidia/nemotron-3.5-super-vl-120b-a12b": 6
+  },
+  "conditions": {
+    "balanced_promotional": 11,
+    "random_matched": 5,
+    "neutral": 3
+  },
+  "sensitivity": {
+    "balanced_promotional": {
+      "0": {
+        "n": 18,
+        "as_run": 17,
+        "after_exclusion": 4
+      },
+      "1": {
+        "n": 18,
+        "as_run": 13,
+        "after_exclusion": 3
+      }
+    },
+    "promotional": {
+      "0": {
+        "n": 18,
+        "as_run": 18,
+        "after_exclusion": 18
+      },
+      "1": {
+        "n": 18,
+        "as_run": 0,
+        "after_exclusion": 0
+      }
+    },
+    "neutral": {
+      "0": {
+        "n": 18,
+        "as_run": 9,
+        "after_exclusion": 3
+      },
+      "1": {
+        "n": 18,
+        "as_run": 9,
+        "after_exclusion": 3
+      }
+    },
+    "random_matched": {
+      "0": {
+        "n": 18,
+        "as_run": 7,
+        "after_exclusion": 4
+      },
+      "1": {
+        "n": 18,
+        "as_run": 10,
+        "after_exclusion": 2
+      }
+    }
+  },
+  "exclusions": {
+    "job_health_01": [
+      "F5",
+      "F6"
+    ],
+    "job_schedule_01": [
+      "F5",
+      "F6"
+    ],
+    "lease_break_01": [
+      "F5",
+      "F6"
+    ],
+    "job_moving_01": [
+      "F7",
+      "F8"
+    ],
+    "lease_deposit_01": [
+      "F5",
+      "F6"
+    ]
+  },
+  "balanced_candidate_pair_omissions": 0,
+  "input_sha256": {
+    "analysis/episodes.csv": "33bd8c4799953b7a4c459f2fb5c05bf8ef22fabc857a5d5d06503b7ee73ce1ac",
+    "evaluation_jobs.jsonl": "378a770f055b1b563a55ee568e5123508ce61f96bd28f63cc043120636b2170d",
+    "attempts.jsonl": "b6e39b7d528dbacc2d525e2e40891a1657f65c278a928696afad8c1bb38365ab",
+    "cases.json": "16a04a34a3b8a6578ee52a44dbe30a6d2bc81e4f74f97bdfff933d0fa250dfcf",
+    "briefings.json": "c0c6c71e25efe2292fd614367eaf07d1267dcbef7e586d7f867dd0c991468c78"
+  }
+}

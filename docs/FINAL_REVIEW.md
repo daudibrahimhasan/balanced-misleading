@@ -11,6 +11,19 @@ independently validated because the automated checks pass.
 - [Frozen main evidence](../data/main-v6)
 - [Literature checks](literature-check.md)
 
+## Review of the reframed paper
+
+Your premise-boundary review is incorporated. Please check Section 3.1 against
+your authored setup; verify the exclusion list and the 17/18; 13/18 to 4/18; 3/18
+sensitivity change. The new interpretation is explicitly post hoc. Please read
+all 19 rows in [false-neither.csv](reviews/premise-boundary-20261116/false-neither.csv)
+and independently code whether each justification cites missing qualification
+information. Check the seven distinct briefing/context inputs and avoid treating
+19 repeated outputs as independent cases. This is an output-level pattern, not
+proof of internal reasoning or causal mediation. No corrected experiment occurred.
+The full JANUS framework and the original planted recipient-specific hypothesis
+are not declared failures or confirmed findings.
+
 ## What needs your review
 
 1. **Interpretation.** A zero selection-imbalance score can coexist with critical

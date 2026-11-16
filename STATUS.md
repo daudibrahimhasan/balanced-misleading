@@ -28,12 +28,18 @@ reproduces offline with every packaged hash unchanged. Configured secret-value
 scan found no matches. Reported main usage is 989,578 tokens, with eight attempts
 of unknown usage. US$19.545 is a reservation allowance, not a verified invoice.
 
-The paper has 8 main pages, 2 reference pages and 3 appendix pages. Its abstract is
-194 words. The official template, two-author heading, numeric table, figure, APA
-references and required ethics/dual-use appendix were visually checked. A clean
-PDF snapshot excludes unresolved proofreading suggestions in the live document.
+Interpretation revision (16 November): Elvina identified original setup facts that
+were not consistently supplied as known premises in the executed task. The paper
+now reports that partially observed qualification task and labels the new reframe
+as post hoc. Balanced critical omissions are 17/18; 13/18 as-run and 4/18; 3/18 after
+specified exclusions. No balanced packet drops the planted candidate pair.
+All 19 false-neither outputs cite missing qualification evidence on LLM-assisted
+inspection; they span four families and seven distinct briefing/context inputs.
+The new offline audit is scripts/premise_boundary_audit.py; its outputs are in
+docs/reviews/premise-boundary-20261116. Frozen evidence and source remain unchanged.
 
-Next: Elvina's final coauthor review of interpretation, assumptions, citations and
-authorship. New inference and external submission are separate actions. Historical
-review handoffs and case metadata remain unchanged as provenance; they are not
-current authorship or proof of independent human validation.
+The revised native manuscript and clean 13-page PDF are verified, including the
+221-word abstract, original result table/figure, references and authors. All 41
+frozen evidence hashes match. The new offline audit reproduces the reported counts.
+Next: final coauthor review of the reframed interpretation and independent human
+coding of the 19 justifications. No new inference or external submission is claimed.

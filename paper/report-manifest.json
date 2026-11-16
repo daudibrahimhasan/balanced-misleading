@@ -1,16 +1,18 @@
 {
-  "exported_utc": "2026-11-16T07:15:33.470986+00:00",
+  "exported_utc": "2026-11-16T08:51:13.433000+00:00",
   "document_url": "https://docs.google.com/document/d/1hWacDlUdl_Tlyz4ObjvRS0kho9pjLVJCCPKF1rrSXeU/edit",
-  "source_revision_before_export": "AHj4eMQW2PPny2CJdTK4z5qLtFfcxvLZ7J6OYRummH5zvc9bjaldJmlWMSbLfvA_ycoW6OHnbQ--KmPOpE1T2umiW7dXO46EQfWF8co68bM",
+  "source_revision_before_export": "AHj4eMSXD651wdIof0gh9tkp7_WyNB_51qeWwIh_tTzOhIfj2ZjhDjysExlqQyhWFOSGUekpFcaq9XwTfXU1PC5qNXs5QTwino1dApcrrIc",
   "authors": [
     "Daud Ibrahim Hassan",
     "Elvina Chow"
   ],
   "pages": 13,
   "main_pages": 8,
-  "abstract_words": 194,
-  "pdf_sha256": "0e304bbf38810c6d54bb0e7bec00388dd8e9bdd8ccd68abefbe1f1e177ec2e60",
-  "markdown_sha256": "0b465342583e952f0e1f760684b3b1c1e0b67ef857937d150ff193d86f080fe6",
+  "abstract_words": 221,
+  "pdf_sha256": "c019100960ac648e6fc309e13f6d8507ada2e7d1097d6d09717d5c320b0af7f5",
+  "markdown_sha256": "a301475681908cdcd34c1f74176a685ad7220593b073902b99efb51dca504092",
   "main_run_source_hash": "197aa5facbe77040df80d0ca602d95f60bd2228be6322f12d04d7b9de40f6837",
-  "review_status": "Prepared for final coauthor review; independent formal-assumption validation remains open."
+  "review_status": "Prepared for coauthor review; independent premise validation and rationale coding remain open.",
+  "revision_scope": "Post-collection reframe around executed qualification task; premise audit and false-neither rationale inspection are post hoc.",
+  "supersedes_pdf_sha256": "0e304bbf38810c6d54bb0e7bec00388dd8e9bdd8ccd68abefbe1f1e177ec2e60"
 }

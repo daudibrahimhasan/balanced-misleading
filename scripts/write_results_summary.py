@@ -2,6 +2,8 @@
 import csv,json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+if '## Interpretation revision:' in (ROOT/'docs/RESULTS.md').read_text(encoding='utf-8'):
+    raise SystemExit('Preserving the reviewed post hoc interpretation in docs/RESULTS.md. Reproduce its tables with final_report_audit.py and premise_boundary_audit.py instead.')
 state=json.loads((ROOT/'approval/current-live-run.json').read_text());assert state['status']=='collection_finished_review_outputs'
 run=Path(state['main_run']);a=run/'analysis';audit=json.loads((a/'report_audit.json').read_text());assert not audit['missing_jobs']
 def read(name):return list(csv.DictReader((a/name).open(encoding='utf-8')))
