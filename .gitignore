@@ -2,10 +2,16 @@
 .env.*
 __pycache__/
 .venv/
-results/
+/results/
 *.pyc
 .pytest_cache/
 docs/format-qa/
 research-doc-export.md
 scripts/check_nvidia_access.py
 docs/re-review/
+
+# Local rendering scratch files; keep the report and verification note.
+paper/qa/final/
+paper/qa/*.png
+paper/qa/*.pdf
+paper/report-text.txt

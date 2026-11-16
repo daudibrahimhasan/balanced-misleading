@@ -1,0 +1,3 @@
+# Preserve frozen evidence and report hashes across Windows and Linux checkouts.
+/data/main-v6/** -text whitespace=cr-at-eol
+/paper/** -text whitespace=cr-at-eol

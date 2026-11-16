@@ -1,0 +1,138 @@
+model,context_index,contrast,family,delta
+DeepSeek V4.1 Flash 1017,0,promotional - neutral,lease_deposit,0.0
+DeepSeek V4.1 Flash 1017,0,promotional - neutral,job_health,0.0
+DeepSeek V4.1 Flash 1017,0,promotional - neutral,job_schedule,0.0
+DeepSeek V4.1 Flash 1017,0,promotional - neutral,lease_parking,0.0
+DeepSeek V4.1 Flash 1017,0,promotional - neutral,lease_break,0.0
+DeepSeek V4.1 Flash 1017,0,promotional - neutral,job_moving,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - neutral,job_health,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - neutral,job_schedule,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - neutral,lease_parking,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - neutral,lease_break,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - neutral,job_moving,0.0
+DeepSeek V4.1 Flash 1017,0,random_matched - neutral,lease_deposit,0.0
+DeepSeek V4.1 Flash 1017,0,random_matched - neutral,job_health,0.0
+DeepSeek V4.1 Flash 1017,0,random_matched - neutral,job_schedule,0.0
+DeepSeek V4.1 Flash 1017,0,random_matched - neutral,lease_parking,0.0
+DeepSeek V4.1 Flash 1017,0,random_matched - neutral,lease_break,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - random_matched,job_health,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - random_matched,job_schedule,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - random_matched,lease_parking,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - random_matched,lease_break,0.0
+DeepSeek V4.1 Flash 1017,1,promotional - neutral,lease_deposit,0.0
+DeepSeek V4.1 Flash 1017,1,promotional - neutral,job_health,0.0
+DeepSeek V4.1 Flash 1017,1,promotional - neutral,job_schedule,0.0
+DeepSeek V4.1 Flash 1017,1,promotional - neutral,lease_parking,0.0
+DeepSeek V4.1 Flash 1017,1,promotional - neutral,lease_break,0.0
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - neutral,lease_deposit,0.0
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - neutral,job_health,0.0
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - neutral,job_schedule,0.0
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - neutral,lease_parking,0.0
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - neutral,lease_break,0.0
+DeepSeek V4.1 Flash 1017,1,random_matched - neutral,lease_deposit,0.0
+DeepSeek V4.1 Flash 1017,1,random_matched - neutral,job_health,0.8333333333333334
+DeepSeek V4.1 Flash 1017,1,random_matched - neutral,job_schedule,0.3333333333333333
+DeepSeek V4.1 Flash 1017,1,random_matched - neutral,lease_parking,0.0
+DeepSeek V4.1 Flash 1017,1,random_matched - neutral,lease_break,0.0
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - random_matched,lease_deposit,0.0
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - random_matched,job_health,-0.8333333333333334
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - random_matched,job_schedule,-0.3333333333333333
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - random_matched,lease_parking,0.0
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - random_matched,lease_break,0.0
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - random_matched,job_moving,0.0
+GLM-5.3-Flash,0,promotional - neutral,lease_deposit,1.0
+GLM-5.3-Flash,0,promotional - neutral,job_health,0.0
+GLM-5.3-Flash,0,promotional - neutral,job_schedule,0.16666666666666666
+GLM-5.3-Flash,0,promotional - neutral,lease_parking,-0.16666666666666666
+GLM-5.3-Flash,0,promotional - neutral,lease_break,0.0
+GLM-5.3-Flash,0,promotional - neutral,job_moving,-0.6666666666666666
+GLM-5.3-Flash,0,balanced_promotional - neutral,lease_deposit,0.0
+GLM-5.3-Flash,0,balanced_promotional - neutral,job_health,0.0
+GLM-5.3-Flash,0,balanced_promotional - neutral,job_schedule,0.8333333333333334
+GLM-5.3-Flash,0,balanced_promotional - neutral,lease_parking,0.16666666666666666
+GLM-5.3-Flash,0,balanced_promotional - neutral,lease_break,0.0
+GLM-5.3-Flash,0,balanced_promotional - neutral,job_moving,-0.16666666666666663
+GLM-5.3-Flash,0,random_matched - neutral,lease_deposit,0.6666666666666666
+GLM-5.3-Flash,0,random_matched - neutral,job_health,0.0
+GLM-5.3-Flash,0,random_matched - neutral,job_schedule,0.16666666666666666
+GLM-5.3-Flash,0,random_matched - neutral,lease_parking,-0.16666666666666666
+GLM-5.3-Flash,0,random_matched - neutral,lease_break,0.0
+GLM-5.3-Flash,0,random_matched - neutral,job_moving,-0.3333333333333333
+GLM-5.3-Flash,0,balanced_promotional - random_matched,lease_deposit,-0.6666666666666666
+GLM-5.3-Flash,0,balanced_promotional - random_matched,job_health,0.0
+GLM-5.3-Flash,0,balanced_promotional - random_matched,job_schedule,0.6666666666666667
+GLM-5.3-Flash,0,balanced_promotional - random_matched,lease_parking,0.3333333333333333
+GLM-5.3-Flash,0,balanced_promotional - random_matched,lease_break,0.0
+GLM-5.3-Flash,0,balanced_promotional - random_matched,job_moving,0.16666666666666669
+GLM-5.3-Flash,1,promotional - neutral,lease_deposit,0.0
+GLM-5.3-Flash,1,promotional - neutral,job_health,0.0
+GLM-5.3-Flash,1,promotional - neutral,job_schedule,0.0
+GLM-5.3-Flash,1,promotional - neutral,lease_parking,0.0
+GLM-5.3-Flash,1,promotional - neutral,lease_break,0.0
+GLM-5.3-Flash,1,promotional - neutral,job_moving,-0.3333333333333333
+GLM-5.3-Flash,1,balanced_promotional - neutral,lease_deposit,0.3333333333333333
+GLM-5.3-Flash,1,balanced_promotional - neutral,job_health,0.0
+GLM-5.3-Flash,1,balanced_promotional - neutral,job_schedule,0.0
+GLM-5.3-Flash,1,balanced_promotional - neutral,lease_parking,0.0
+GLM-5.3-Flash,1,balanced_promotional - neutral,lease_break,0.0
+GLM-5.3-Flash,1,balanced_promotional - neutral,job_moving,-0.3333333333333333
+GLM-5.3-Flash,1,random_matched - neutral,lease_deposit,0.0
+GLM-5.3-Flash,1,random_matched - neutral,job_health,0.6666666666666666
+GLM-5.3-Flash,1,random_matched - neutral,job_schedule,0.3333333333333333
+GLM-5.3-Flash,1,random_matched - neutral,lease_parking,0.16666666666666666
+GLM-5.3-Flash,1,random_matched - neutral,lease_break,0.0
+GLM-5.3-Flash,1,random_matched - neutral,job_moving,0.0
+GLM-5.3-Flash,1,balanced_promotional - random_matched,lease_deposit,0.3333333333333333
+GLM-5.3-Flash,1,balanced_promotional - random_matched,job_health,-0.6666666666666666
+GLM-5.3-Flash,1,balanced_promotional - random_matched,job_schedule,-0.3333333333333333
+GLM-5.3-Flash,1,balanced_promotional - random_matched,lease_parking,-0.16666666666666666
+GLM-5.3-Flash,1,balanced_promotional - random_matched,lease_break,0.0
+GLM-5.3-Flash,1,balanced_promotional - random_matched,job_moving,-0.3333333333333333
+Nemotron 3.5 Super VL,0,promotional - neutral,lease_deposit,1.0
+Nemotron 3.5 Super VL,0,promotional - neutral,job_health,0.0
+Nemotron 3.5 Super VL,0,promotional - neutral,job_schedule,0.6666666666666666
+Nemotron 3.5 Super VL,0,promotional - neutral,lease_parking,0.0
+Nemotron 3.5 Super VL,0,promotional - neutral,lease_break,0.16666666666666666
+Nemotron 3.5 Super VL,0,promotional - neutral,job_moving,0.5
+Nemotron 3.5 Super VL,0,balanced_promotional - neutral,lease_deposit,0.0
+Nemotron 3.5 Super VL,0,balanced_promotional - neutral,job_health,0.0
+Nemotron 3.5 Super VL,0,balanced_promotional - neutral,job_schedule,0.6666666666666666
+Nemotron 3.5 Super VL,0,balanced_promotional - neutral,lease_parking,0.0
+Nemotron 3.5 Super VL,0,balanced_promotional - neutral,lease_break,0.0
+Nemotron 3.5 Super VL,0,balanced_promotional - neutral,job_moving,0.0
+Nemotron 3.5 Super VL,0,random_matched - neutral,lease_deposit,0.6666666666666666
+Nemotron 3.5 Super VL,0,random_matched - neutral,job_health,0.0
+Nemotron 3.5 Super VL,0,random_matched - neutral,job_schedule,0.3333333333333333
+Nemotron 3.5 Super VL,0,random_matched - neutral,lease_parking,0.0
+Nemotron 3.5 Super VL,0,random_matched - neutral,lease_break,0.0
+Nemotron 3.5 Super VL,0,random_matched - neutral,job_moving,0.0
+Nemotron 3.5 Super VL,0,balanced_promotional - random_matched,lease_deposit,-0.6666666666666666
+Nemotron 3.5 Super VL,0,balanced_promotional - random_matched,job_health,0.0
+Nemotron 3.5 Super VL,0,balanced_promotional - random_matched,job_schedule,0.3333333333333333
+Nemotron 3.5 Super VL,0,balanced_promotional - random_matched,lease_parking,0.0
+Nemotron 3.5 Super VL,0,balanced_promotional - random_matched,lease_break,0.0
+Nemotron 3.5 Super VL,0,balanced_promotional - random_matched,job_moving,0.0
+Nemotron 3.5 Super VL,1,promotional - neutral,lease_deposit,0.0
+Nemotron 3.5 Super VL,1,promotional - neutral,job_health,0.0
+Nemotron 3.5 Super VL,1,promotional - neutral,job_schedule,0.0
+Nemotron 3.5 Super VL,1,promotional - neutral,lease_parking,0.0
+Nemotron 3.5 Super VL,1,promotional - neutral,lease_break,0.0
+Nemotron 3.5 Super VL,1,promotional - neutral,job_moving,0.0
+Nemotron 3.5 Super VL,1,balanced_promotional - neutral,lease_deposit,0.0
+Nemotron 3.5 Super VL,1,balanced_promotional - neutral,job_health,0.0
+Nemotron 3.5 Super VL,1,balanced_promotional - neutral,job_schedule,0.0
+Nemotron 3.5 Super VL,1,balanced_promotional - neutral,lease_parking,0.0
+Nemotron 3.5 Super VL,1,balanced_promotional - neutral,lease_break,0.0
+Nemotron 3.5 Super VL,1,balanced_promotional - neutral,job_moving,0.0
+Nemotron 3.5 Super VL,1,random_matched - neutral,lease_deposit,0.0
+Nemotron 3.5 Super VL,1,random_matched - neutral,job_health,1.0
+Nemotron 3.5 Super VL,1,random_matched - neutral,job_schedule,0.3333333333333333
+Nemotron 3.5 Super VL,1,random_matched - neutral,lease_parking,0.16666666666666666
+Nemotron 3.5 Super VL,1,random_matched - neutral,lease_break,0.0
+Nemotron 3.5 Super VL,1,random_matched - neutral,job_moving,0.3333333333333333
+Nemotron 3.5 Super VL,1,balanced_promotional - random_matched,lease_deposit,0.0
+Nemotron 3.5 Super VL,1,balanced_promotional - random_matched,job_health,-1.0
+Nemotron 3.5 Super VL,1,balanced_promotional - random_matched,job_schedule,-0.3333333333333333
+Nemotron 3.5 Super VL,1,balanced_promotional - random_matched,lease_parking,-0.16666666666666666
+Nemotron 3.5 Super VL,1,balanced_promotional - random_matched,lease_break,0.0
+Nemotron 3.5 Super VL,1,balanced_promotional - random_matched,job_moving,-0.3333333333333333

@@ -1,0 +1,19 @@
+model,context_index,metric,inference,contrast,complete_families,incomplete_packets,paired_packets,mean_family_delta,ci_low,ci_high
+deepseek-ai/deepseek-v4.1-flash-1017,0,incorrect_commitment,descriptive,promotional - neutral,6,0,6,0.0,0.0,0.0
+deepseek-ai/deepseek-v4.1-flash-1017,0,incorrect_commitment,descriptive,balanced_promotional - neutral,5,1,5,0.0,0.0,0.0
+deepseek-ai/deepseek-v4.1-flash-1017,0,incorrect_commitment,descriptive,random_matched - neutral,5,1,5,0.0,0.0,0.0
+nvidia/nemotron-3.5-super-vl-120b-a12b,0,incorrect_commitment,descriptive,promotional - neutral,6,0,6,0.38888888888888884,0.1111111111111111,0.6944444444444443
+nvidia/nemotron-3.5-super-vl-120b-a12b,0,incorrect_commitment,descriptive,balanced_promotional - neutral,6,0,6,0.1111111111111111,0.0,0.3333333333333333
+nvidia/nemotron-3.5-super-vl-120b-a12b,0,incorrect_commitment,descriptive,random_matched - neutral,6,0,6,0.16666666666666666,0.0,0.38888888888888884
+zai-org/glm-5.3-flash,0,incorrect_commitment,descriptive,promotional - neutral,6,0,6,0.05555555555555556,-0.3333333333333333,0.49999999999999994
+zai-org/glm-5.3-flash,0,incorrect_commitment,descriptive,balanced_promotional - neutral,6,0,6,0.1388888888888889,-0.055555555555555546,0.41666666666666674
+zai-org/glm-5.3-flash,0,incorrect_commitment,descriptive,random_matched - neutral,6,0,6,0.05555555555555555,-0.16666666666666666,0.3333333333333333
+deepseek-ai/deepseek-v4.1-flash-1017,1,incorrect_commitment,descriptive,promotional - neutral,5,1,5,0.0,0.0,0.0
+deepseek-ai/deepseek-v4.1-flash-1017,1,incorrect_commitment,descriptive,balanced_promotional - neutral,5,1,5,0.0,0.0,0.0
+deepseek-ai/deepseek-v4.1-flash-1017,1,incorrect_commitment,descriptive,random_matched - neutral,5,1,5,0.23333333333333334,0.0,0.5666666666666667
+nvidia/nemotron-3.5-super-vl-120b-a12b,1,incorrect_commitment,descriptive,promotional - neutral,6,0,6,0.0,0.0,0.0
+nvidia/nemotron-3.5-super-vl-120b-a12b,1,incorrect_commitment,descriptive,balanced_promotional - neutral,6,0,6,0.0,0.0,0.0
+nvidia/nemotron-3.5-super-vl-120b-a12b,1,incorrect_commitment,descriptive,random_matched - neutral,6,0,6,0.3055555555555555,0.08333333333333333,0.611111111111111
+zai-org/glm-5.3-flash,1,incorrect_commitment,descriptive,promotional - neutral,6,0,6,-0.05555555555555555,-0.16666666666666666,0.0
+zai-org/glm-5.3-flash,1,incorrect_commitment,descriptive,balanced_promotional - neutral,6,0,6,0.0,-0.16666666666666666,0.16666666666666666
+zai-org/glm-5.3-flash,1,incorrect_commitment,descriptive,random_matched - neutral,6,0,6,0.19444444444444445,0.027777777777777776,0.4166666666666666

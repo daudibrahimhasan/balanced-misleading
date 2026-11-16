@@ -1,0 +1,10 @@
+method,metric,rate
+Nemotron 3.5 Super VL,Recall,0.4134078212290503
+Nemotron 3.5 Super VL,False alarm,0.22955145118733508
+Nemotron 3.5 Super VL,Exact set,0.2607260726072607
+Checklist,Recall,1.0
+Checklist,False alarm,1.0
+Checklist,Exact set,0.132013201320132
+Rule-topic,Recall,1.0
+Rule-topic,False alarm,0.39577836411609496
+Rule-topic,Exact set,0.5247524752475248

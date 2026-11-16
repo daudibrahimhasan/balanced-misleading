@@ -1,0 +1,161 @@
+{
+  "status": "frozen",
+  "phase": "development",
+  "seed": 314159,
+  "repeats": 2,
+  "writer_repeats": 3,
+  "roles": {
+    "writer": {
+      "name": "DeepSeek V4.1 Flash 1017",
+      "model": "deepseek-ai/deepseek-v4.1-flash-1017",
+      "endpoint": "https://api-cdn.deploy.com/api/v1/chat/completions",
+      "key_env": "DEPLOY_API_KEY",
+      "adapter": "openai_chat",
+      "max_output_tokens": 4096,
+      "output_limit_field": "max_completion_tokens",
+      "max_request_usd": 0.015,
+      "max_concurrent_requests": 1,
+      "parameters": {
+        "temperature": 0,
+        "reasoning_effort": "low"
+      }
+    },
+    "receiver": {
+      "name": "GLM-5.3-Flash",
+      "model": "zai-org/glm-5.3-flash",
+      "endpoint": "https://api-cdn.deploy.com/api/v1/chat/completions",
+      "key_env": "DEPLOY_API_KEY",
+      "adapter": "openai_chat",
+      "max_output_tokens": 4096,
+      "output_limit_field": "max_completion_tokens",
+      "max_request_usd": 0.015,
+      "max_concurrent_requests": 1,
+      "parameters": {
+        "temperature": 0,
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      }
+    },
+    "detector": {
+      "name": "Nemotron 3.5 Super VL",
+      "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
+      "key_env": "nvidia_daud_1_api",
+      "adapter": "openai_chat",
+      "max_output_tokens": 4096,
+      "output_limit_field": "max_tokens",
+      "max_request_usd": 0.015,
+      "max_concurrent_requests": 1,
+      "parameters": {
+        "temperature": 0,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "min_interval_seconds": 6
+    }
+  },
+  "role_routes": {
+    "receiver": [
+      {
+        "name": "DeepSeek V4.1 Flash 1017",
+        "model": "deepseek-ai/deepseek-v4.1-flash-1017",
+        "endpoint": "https://api-cdn.deploy.com/api/v1/chat/completions",
+        "key_env": "DEPLOY_API_KEY",
+        "adapter": "openai_chat",
+        "max_output_tokens": 4096,
+        "output_limit_field": "max_completion_tokens",
+        "max_request_usd": 0.015,
+        "max_concurrent_requests": 1,
+        "parameters": {
+          "temperature": 0,
+          "reasoning_effort": "low"
+        }
+      },
+      {
+        "name": "GLM-5.3-Flash",
+        "model": "zai-org/glm-5.3-flash",
+        "endpoint": "https://api-cdn.deploy.com/api/v1/chat/completions",
+        "key_env": "DEPLOY_API_KEY",
+        "adapter": "openai_chat",
+        "max_output_tokens": 4096,
+        "output_limit_field": "max_completion_tokens",
+        "max_request_usd": 0.015,
+        "max_concurrent_requests": 1,
+        "parameters": {
+          "temperature": 0,
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      },
+      {
+        "name": "Nemotron 3.5 Super VL",
+        "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+        "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
+        "key_env": "nvidia_daud_1_api",
+        "adapter": "openai_chat",
+        "max_output_tokens": 4096,
+        "output_limit_field": "max_tokens",
+        "max_request_usd": 0.015,
+        "max_concurrent_requests": 1,
+        "parameters": {
+          "temperature": 0,
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        },
+        "min_interval_seconds": 6
+      }
+    ],
+    "detector": [
+      {
+        "name": "Nemotron 3.5 Super VL",
+        "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+        "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
+        "key_env": "nvidia_daud_1_api",
+        "adapter": "openai_chat",
+        "max_output_tokens": 4096,
+        "output_limit_field": "max_tokens",
+        "max_request_usd": 0.015,
+        "max_concurrent_requests": 1,
+        "parameters": {
+          "temperature": 0,
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        },
+        "min_interval_seconds": 6
+      }
+    ]
+  },
+  "require_guru_go": true,
+  "guards": {
+    "max_requests": 1303,
+    "max_seconds": 250180,
+    "max_output_tokens_total": 5337088,
+    "max_reserved_usd": 24,
+    "timeout_seconds": 180
+  },
+  "api_routes_verified": true,
+  "notes": "Version 6 development repair screen. DeepSeek Flash 1017 via Deploy replaces the earlier Modal checkpoint/route. GLM via Deploy now uses API response_format=json_object to prevent non-JSON preambles. Nemotron 3.5 Super VL has reasoning off and six-second start spacing. Receiver schema requests brief justification BEFORE action with an explicit consistency instruction for every receiver/context. These changes followed errors observed on development items and are not held-out validation. No label, fact or scoring changes: submitted action remains authoritative even if explanation disagrees. Temperature 0, output cap 4096, timeout 180, one in-flight per route. All 42 items attempted afresh; no item retries or successful replacements. Every earlier version retained. No main collection in this script. USD reservations are accounting allowances, not invoices.",
+  "purpose": "balance_study",
+  "enumerate_reference_subsets": true,
+  "approval_file": "approval/daud-main-v6-writer-amendment.json",
+  "require_competence_report": "approval/competence-repair-v6-result.json",
+  "balance_pass_epsilon": 0,
+  "authorized_reviewers": [
+    "Daud Ibrahim Hassan"
+  ],
+  "max_concurrency": 3,
+  "accept_competence_if_passed": true,
+  "amendment": {
+    "kind": "explicit_writer_retry",
+    "original_run": "D:\\Apart Sprint\\AI x Epistemics Research Sprint\\results\\main-v6-20261115T212743Z",
+    "retried_job_id": "7108c320b81366cca1d53731388faf121adaffa05d5260e64bbdc114a0c75960",
+    "reason": "One output selected two facts rather than the required eight. User explicitly instructed fix it. Same prompt, route, seed, budget and scientific settings; invalid original retained. One extra request allowance only."
+  }
+}

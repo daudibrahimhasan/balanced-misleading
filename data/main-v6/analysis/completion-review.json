@@ -1,0 +1,15 @@
+{
+  "planned_evaluations": 1248,
+  "evaluation_attempts": 1248,
+  "missing_job_ids": [],
+  "repeated_evaluation_attempts": {},
+  "statuses": {
+    "ok": 1233,
+    "interrupted": 6,
+    "invalid_output": 7,
+    "request_error": 2
+  },
+  "unknown_usage": 8,
+  "writer_attempts": 55,
+  "claim_scope": "Development experiment; retain failed writer attempt, missing outcomes and all planned denominators."
+}

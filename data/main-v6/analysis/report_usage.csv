@@ -1,0 +1,6 @@
+model,role,attempts,unknown_usage,prompt_tokens,completion_tokens,total_tokens
+DeepSeek V4.1 Flash 1017,receiver,312,4,136036,126479,262515
+DeepSeek V4.1 Flash 1017,writer,55,0,19006,42491,61497
+GLM-5.3-Flash,receiver,312,0,128198,26476,154674
+Nemotron 3.5 Super VL,detector,312,2,301520,47669,349189
+Nemotron 3.5 Super VL,receiver,312,2,136808,24895,161703

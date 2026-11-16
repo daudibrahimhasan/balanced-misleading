@@ -1,0 +1,1438 @@
+[
+  {
+    "case": "lease_deposit_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "fe8835fcc1fb918c3e40b924597931d51614f1b2b9314f7273eb3c92736729c1",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "904052a0b6296bea7ef7dacd5bce32149934b5afc9204e14a3f58ec4bd9f6de6"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "51dc39a51997d04e8e84d27b937fdfbfea0bae06e536ab9de71bd139d0f50c3e",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has an in-unit washer and dryer.",
+    "id": "d81fcad28dfb6f90c771f17e33781be0177057037cd4ed4a20a52839a8769b7e"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "dd54a1440f38e9def06d7b6e113e01dbd53980a8951c2328bfe79b29ec313651",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "f94fdcab7fbc7c6893d243c8fd225da13718e616009ad7bda92a1c2225f3d9d0"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ],
+    "writer_job": "0a96252f863f591cc5995b8ef8c8f4b92279d54f25eb41004ee00a146d098929",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.",
+    "id": "7c5448caff33d686f32626ec84ff1618b3c832e08e5ef8236cc3971476cab8b2"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "fa1448959c1d14216ebd831bf0b5efc9a94490c1b4681811f3ec0b48110ff53b",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "1edf4c4abe100a112a1aa4f202bd8e20bffc75eabd393c98e508be314787318a"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "43ce7965bafd915ca0b0add00bcab94b40609822ad67adc96804ebb37efc9ec4",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "66ca1a332626ca05a69023422cb83db9f3eed50d634fd9d1278c77a0712a4260"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "d2252b0d547c6691c93bc90598b4ad2cf904979e9654244692ba2fe7c5caa3b2",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "5b1689d5b652cc47c637e05f7c3a200492bcad67168b4874403ac5704f5fc04d"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "930a37d8098872f52d758d6dc6ef16466a6ab277ccc5f7885972ce4c997904df",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has an in-unit washer and dryer.",
+    "id": "69805bede1cf912d2210c28944743ee62a8375eaccb9093bcbc1a0b837bcc321"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "2a397a77674810b736ad366a947379f784e1c1e4d11f7ae96f1fef09ad6e91d0",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "990a4a0be24110e8f6dd8b5b150dce82efc3961d7f6f2c9a4e00bc3df7ad0bee"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "random_matched",
+    "included": [
+      "F4",
+      "F2",
+      "F3",
+      "F9",
+      "F6",
+      "F7",
+      "F10",
+      "F1"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment B requires the first month's rent at signing.\nApartment A offers a 12-month lease.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "67ba533c38364c55733e32ee01a1343a59cc5ddc1f37dd412586bab0e20f1adf"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "random_matched",
+    "included": [
+      "F6",
+      "F9",
+      "F1",
+      "F2",
+      "F4",
+      "F3",
+      "F10",
+      "F5"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "0cbef0112309fb610175d3deaa6e45795c4931c2c617af3b520070ef4c80f2eb"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "random_matched",
+    "included": [
+      "F10",
+      "F4",
+      "F7",
+      "F6",
+      "F9",
+      "F2",
+      "F3",
+      "F1"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment B requires the first month's rent at signing.\nApartment A offers a 12-month lease.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "6bebb5df481803a69dc43d66d67608cda67086c43101bfb7dc3ec190223e8a92"
+  },
+  {
+    "case": "lease_deposit_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Apartment A rents for $1,800 per month.\nApartment B rents for $1,900 per month.\nApartment A requires a security deposit of $3,600, paid at signing.\nApartment B requires a security deposit of $1,900, paid at signing.\nApartment A requires the first month's rent at signing.\nApartment B requires the first month's rent at signing.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has an in-unit washer and dryer.\nApartment B is a five-minute walk from a grocery store.",
+    "id": "8ab62039a45099a2570ff1cd654514104e18b3749712754d9795e06980011175"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "868af1ef1fb886035f826916604a30514c1683d0b74ee821cc6dbb1ac7b6cf57",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.\nOffer B includes 15 days of paid time off per year.",
+    "id": "18b6d50f345f4b3cbadf451f9d2714fe0af344164d6c5f2bec1fc79e40167018"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F10"
+    ],
+    "writer_job": "5113539f90ab0af705173382793396a602c0fa352d8ca7a964052d5dcb471a53",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer B includes 15 days of paid time off per year.",
+    "id": "ab268256425a9d03ae0b472ebbf9c9b082510f948f871881a98d033a20d0e075"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "6abcbbb99b360e55c2b0f06080a34ae9d6e7d971af201651c699138cfd854d4e",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.\nOffer B includes 15 days of paid time off per year.",
+    "id": "53aaad8d621b35e7b74b77a275f4a75777d60a337e6f1b686f6f658f0b0509f2"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "4fdb7ee0457f046742cd2ef503220329613e2066073dfbf92c18e1b71c57efc8",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.\nOffer B includes 15 days of paid time off per year.",
+    "id": "1ac4d2deea6f4e5c0f6f65e342fd9dd66b5d7c0c4db12d5912b317aa1fed2c47"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F10"
+    ],
+    "writer_job": "242b6deb5defc72a8f92ae3a9e1c1fa2be0278b7eeaa81030fd5ff7eb1a576a7",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer B includes 15 days of paid time off per year.",
+    "id": "067d707b5d02502783254df2a2464ee674bd7fc597a6f958c2295ae2c16ed11f"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "e49cc8cb4f3e533b7bafb5d40e6ce47a73d2c6bd5fded0daa38fb5cade7ca90a",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.\nOffer B includes 15 days of paid time off per year.",
+    "id": "a46446f0111b74c0f824a703e829363b55b3b15bb51f9ca32debe99b30a977af"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "2d289f1e6e247c3798d83c5862b009e6b73d8a77bd0552de75953d4838f63dd4",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.\nOffer B includes 15 days of paid time off per year.",
+    "id": "01c4e55b1092907f5fbfe890bd03f446a822d587c925c47c808d5abc59b6a053"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "e611fe6847c9c126ae70bb5212edc32016f6c596db0e545af3185139f4bcf222",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.",
+    "id": "466515342b7a0ffc539bcee1c5710615933cd3e2d194ab9af6567bb3de7c3cbf"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "766fd46f054aa679932786f8ea1eeebc2366d9aab8cdb374b747e4d8f822277c",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.\nOffer B includes 15 days of paid time off per year.",
+    "id": "8bc55c009604f338b7dc8e4acd58cb0b65c002b0331364b105c4789652a15728"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "random_matched",
+    "included": [
+      "F10",
+      "F5",
+      "F4",
+      "F1",
+      "F2",
+      "F3",
+      "F7",
+      "F8"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A is a full-time position.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer B includes 15 days of paid time off per year.",
+    "id": "3b5371c0e783a582743a258b15c968eaf42914b8002380b0ef428739eb5be597"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "random_matched",
+    "included": [
+      "F2",
+      "F9",
+      "F5",
+      "F7",
+      "F8",
+      "F1",
+      "F4",
+      "F3"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A is a full-time position.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.",
+    "id": "26ff84a282cac0f5dbd17a0d3344ef7ade1cf2924e4bd9cb94b20c897a2dec35"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "random_matched",
+    "included": [
+      "F9",
+      "F8",
+      "F4",
+      "F10",
+      "F2",
+      "F5",
+      "F3",
+      "F1"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A is a full-time position.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.\nOffer B includes 15 days of paid time off per year.",
+    "id": "ee71960aba7d45560f1c2f04c5f47d857eddcf67fe25dffa4870e2b3ffa9a6f2"
+  },
+  {
+    "case": "job_health_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Offer A pays an annual base salary of $85,000.\nOffer B pays an annual base salary of $92,000.\nOffer A's health insurance coverage begins on the first day of employment.\nOffer B's health insurance coverage begins after a 90-day waiting period.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A requires working in the office three days per week.\nOffer B is fully remote.\nOffer A includes 20 days of paid time off per year.\nOffer B includes 15 days of paid time off per year.",
+    "id": "0b15152a71982c99d13ba8dbf08fa066f47e10e7c2379abe709c204965b2424a"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F8"
+    ],
+    "writer_job": "15ad4a7567bf992d4b80b1698c65d6a2c48637e58c327efc0e6cf32de8dc45e0",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer A is a full-time position of 40 hours per week.\nOffer B is a full-time position of 40 hours per week.\nOffer B includes a paid training program in the first month.",
+    "id": "96afe851124bc6e0a9ddd146fdf29486f60a138a344c2a3df3515c89c5cca20f"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "19e52488aa254c811e00becce0bcd0458967ec369824e4d48934b652b6a9d9f2",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A is a full-time position of 40 hours per week.\nOffer B is a full-time position of 40 hours per week.\nOffer A's office has free on-site parking.\nOffer B includes a paid training program in the first month.\nOffer B's office is next to a bus stop.",
+    "id": "f007072b37c9bc05b73a8718ea497c9237699a67ead0a56836ab32ad28463ac9"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F6",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "564b4c4252b0624c1a9182dab3266565892c678c2d15f740b99da68b4025b48c",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer B is a full-time position of 40 hours per week.\nOffer B includes a paid training program in the first month.\nOffer B's office is next to a bus stop.",
+    "id": "3ce5892e94e57b49510ee987b07d651f77154c8772cf5f13256ae49db17011af"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F8"
+    ],
+    "writer_job": "723158ab1bdd15d8b94b152104f77dde1a0c552b9c502580a9f60f7c72b87b72",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer A is a full-time position of 40 hours per week.\nOffer B is a full-time position of 40 hours per week.\nOffer B includes a paid training program in the first month.",
+    "id": "5636734256f2152ded7f2d5f5e6ab6d147d3b747ab566807d06f07ea86add2d0"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F4",
+      "F5",
+      "F6",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "0d7c7a9efcd4177b383b993371618d81571a5b5b6a4189666ac893ff03d1cfa4",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer B's schedule includes working every other weekend.\nOffer A is a full-time position of 40 hours per week.\nOffer B is a full-time position of 40 hours per week.\nOffer B includes a paid training program in the first month.\nOffer B's office is next to a bus stop.",
+    "id": "74df1517fa8f489fbe3e98ab051fcf3e5a9503e894c5e40cb64b3f55d6746d41"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "daa267702d2a463f64d4c259d485b831512ffdfeec24afb22825a98733c0307b",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer A's office has free on-site parking.\nOffer B includes a paid training program in the first month.\nOffer B's office is next to a bus stop.",
+    "id": "fc1c0c3e5725e4011fa05d2764d6ee2ce90972ba09d25655bd4196150ac6f97a"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F8"
+    ],
+    "writer_job": "9a0dfcb9ffce1b4d1b221bcad7a28677c7b6a43bba857c338af6f20793bb3078",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer A is a full-time position of 40 hours per week.\nOffer B is a full-time position of 40 hours per week.\nOffer B includes a paid training program in the first month.",
+    "id": "1977b8077855e6d9177a995ed431afe029f72ab3f642ed802eedc13a6634e81f"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "cdcf82b7c1dbbe69c38dbf97730cf4632cd20720fb57169ac91612361bd69f51",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A is a full-time position of 40 hours per week.\nOffer B is a full-time position of 40 hours per week.\nOffer A's office has free on-site parking.\nOffer B includes a paid training program in the first month.\nOffer B's office is next to a bus stop.",
+    "id": "d9fe4d00516d1c6b5886aa302eb9f471e507054f6348fc7ecb82089dfd9fac1f"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F6",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "1484e61ac83ebc9d8e57406d87960476e7247501cdd01cfd1f4877d986f63e69",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer B is a full-time position of 40 hours per week.\nOffer B includes a paid training program in the first month.\nOffer B's office is next to a bus stop.",
+    "id": "e6da91e811abd61fcac7cfa32fab870a1f0f61f7ef70dd3c792f8745cc539b40"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "random_matched",
+    "included": [
+      "F4",
+      "F3",
+      "F1",
+      "F5",
+      "F6",
+      "F9",
+      "F2"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer A is a full-time position of 40 hours per week.\nOffer B is a full-time position of 40 hours per week.\nOffer B's office is next to a bus stop.",
+    "id": "88a5b39b46b440027682d0efd833ab5474e5ce27a2e706a4d597dba6577c8013"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "random_matched",
+    "included": [
+      "F4",
+      "F9",
+      "F2",
+      "F6",
+      "F1",
+      "F3",
+      "F7"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer B is a full-time position of 40 hours per week.\nOffer A's office has free on-site parking.\nOffer B's office is next to a bus stop.",
+    "id": "7fe3baecbb584622372c673dac228a1fcf29e9e647d8f34e39e8f1400f59c20a"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "random_matched",
+    "included": [
+      "F2",
+      "F3",
+      "F9",
+      "F5",
+      "F1",
+      "F7",
+      "F4"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer A is a full-time position of 40 hours per week.\nOffer A's office has free on-site parking.\nOffer B's office is next to a bus stop.",
+    "id": "a2624478b6f7a01739bbaa47352ad9520265f7dbbc69423f1dd35ab2572ca9c7"
+  },
+  {
+    "case": "job_schedule_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Offer A pays $26 per hour.\nOffer B pays $28 per hour.\nOffer A's schedule is Monday to Friday, daytime hours only.\nOffer B's schedule includes working every other weekend.\nOffer A is a full-time position of 40 hours per week.\nOffer B is a full-time position of 40 hours per week.\nOffer A's office has free on-site parking.\nOffer B includes a paid training program in the first month.\nOffer B's office is next to a bus stop.",
+    "id": "356e837a5f46dc856a5d0ccc22b56e6f43acb571a20e5c8af2132057905516e9"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F8"
+    ],
+    "writer_job": "2653ff8b61d2d524508798db9816e47b7ead9890d1bfc216de8c01ad5b27280d",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment B has a private balcony.",
+    "id": "ad6d96709525b62aa52e511e245b18c12cabb8fe44d139cdc01bb4cb51f9c118"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "ccfdbb09045bf02842b5af2594df5b3a89ee46053df56b3b27f0ffbcf533cc4f",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has a dishwasher.\nApartment B has a private balcony.\nApartment B is a ten-minute walk from a park.",
+    "id": "93059d89d311d96d21f0ff04054bd70cb17f492dea4e24acbf73e6f2e9cb4748"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F7",
+      "F8"
+    ],
+    "writer_job": "29370b5e1dfe08c20a1c0e8f4fd9e55551a94d39cbf8d60790a5e17c1bbfaa3c",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment A offers a 12-month lease.\nApartment A has a dishwasher.\nApartment B has a private balcony.",
+    "id": "c500f9e84b274de2b2cdd6043ebcf58b528cc2869adc2c8f43128701c9df4a9b"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F8"
+    ],
+    "writer_job": "d0d46d49cd22e24101eb911f16724a8222d70a32741dd03f148040014096a91b",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment B has a private balcony.",
+    "id": "aa13d26ba69473e4db48277d7b329bcee4224e3000615e7df2d499931bf899e4"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F5",
+      "F6",
+      "F7",
+      "F9"
+    ],
+    "writer_job": "e02cfdb4bb9a6a98f409ad523c953d748bc145cfbb8204ba238e4f7ecd53ee59",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has a dishwasher.\nApartment B is a ten-minute walk from a park.",
+    "id": "3c82c5b158348d42910635eab5b5e14587b95dab1f82afce89ae62aa17268df1"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7"
+    ],
+    "writer_job": "c0833f7f063a5344b8358d5ac4ffca408e5daef2474c9ad3ae78ffce16ef3a2b",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has a dishwasher.",
+    "id": "7ba3ca1fe1fd21b7690eae8f8ec50cdc98ff039e0cd823b59b61fd355290050c"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "e1f9153ce34b2508ef744674d9688ca638ffe41eb23b2706a4fcaab8ec6c2426",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment A has a dishwasher.\nApartment B has a private balcony.\nApartment B is a ten-minute walk from a park.",
+    "id": "73d0bfb9041204d5655a4685197142f91a2f0d75983d32c866b2be4573220851"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F5",
+      "F6",
+      "F7",
+      "F9"
+    ],
+    "writer_job": "a14b4b82feeb4852257896ba38405d2d1d64f76c2f077c4b2eb9b85d103b7012",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has a dishwasher.\nApartment B is a ten-minute walk from a park.",
+    "id": "ab5b0264dc55cd030374737d58fdf8f7ed99eea073271be4cdf8392215e3ef31"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "f96a41f4204cf5dc907c7892457cc0c32944ed797102707ccddef8bcd014a091",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment A has a dishwasher.\nApartment B has a private balcony.\nApartment B is a ten-minute walk from a park.",
+    "id": "1ac48e7a6217fe01fc0fe5b8c61c94d87c44698d20a917e465899bb9b76e6483"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "random_matched",
+    "included": [
+      "F2",
+      "F8",
+      "F3",
+      "F6",
+      "F1",
+      "F5",
+      "F4"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment B has a private balcony.",
+    "id": "d8b49e55f6b18abe581befce23ca4d10e8e5a83f7f84486e1cd8f2abc2f1995d"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "random_matched",
+    "included": [
+      "F7",
+      "F3",
+      "F8",
+      "F5",
+      "F1",
+      "F2",
+      "F4"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment A offers a 12-month lease.\nApartment A has a dishwasher.\nApartment B has a private balcony.",
+    "id": "36eadf594e323433cb328f46233bae4597e89ac6a31db1f1c094dfbf9813f39b"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "random_matched",
+    "included": [
+      "F7",
+      "F6",
+      "F2",
+      "F8",
+      "F4",
+      "F1",
+      "F3"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment B offers a 12-month lease.\nApartment A has a dishwasher.\nApartment B has a private balcony.",
+    "id": "430a458941188453b5254eae50955d95d1d3ad1536a474843b7e6df65fdc5394"
+  },
+  {
+    "case": "lease_parking_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Apartment A rents for $1,500 per month.\nApartment B rents for $1,650 per month.\nParking at Apartment A costs $250 per month for one space.\nApartment B includes one parking space at no extra cost.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A has a dishwasher.\nApartment B has a private balcony.\nApartment B is a ten-minute walk from a park.",
+    "id": "4f1c4cfca262ea751cb7685c52eff3f83dab438b9c9f29dfbd63c9cb0f5c9e0b"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "writer_job": "d7ee5df92ae4abf7ebe191e4a72ad4d27193b5883fb72d20fbdc3f46fbcf9916",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.",
+    "id": "86f6f086293d89f38cbc022a0a0349998f34435d30e4255fb24890267bc78868"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ],
+    "writer_job": "6d66cfaf2745afead1b4141c70d927d3eed3f2e7da31970960943eef5859c6f3",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A includes a private storage locker.\nApartment B's building has a gym.",
+    "id": "fcd35c9ed484ad140c4b9cf9fda6cc0fdd06920da541d6768cab58e2faa9462b"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8"
+    ],
+    "writer_job": "516e8739f4830cdb6ee794d3db36a2ba12ffabdbdd2fb330c1022399f811a3ab",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment A includes a private storage locker.\nApartment B's building has a gym.",
+    "id": "646412baf5f4d669863017cee41a8ac2377e0cafecf0678a6790007180a4161c"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "writer_job": "1b2dd78b5002f03c9d4fe812a2ffc8612b654f734d92036ce35f5744140dd7a7",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.",
+    "id": "9151354056a3d6e432bc0fa26b9c6337179a28ac1eba45c044d22b29e259e90c"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ],
+    "writer_job": "2d9847523a1251f21606e475392bfa19371d90f1ffaef56ba3f5668784779277",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A includes a private storage locker.\nApartment B's building has a gym.",
+    "id": "3ab40750426a4834daa51cf8f9544d05d7cfaabcf5e4a54f1bcb27e062dad6da"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8"
+    ],
+    "writer_job": "4c7f17af5aceb60207bd9e1068e810f1f38c1f45901486bb14992b2c3316acdc",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment A includes a private storage locker.\nApartment B's building has a gym.",
+    "id": "0b8a98637fb8093b59a71e63c140ccfe72800f455df05dab085339275f7046a9"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "writer_job": "6d97c664ad9a96d17500ee0cc0d86d4dca68f76fa73a1fb3826be351a6f39ada",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.",
+    "id": "386c9143c669a25c600bfce11daa5af3d3a17d1f82430124dbbec4942f4f9d63"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F5",
+      "F6",
+      "F7"
+    ],
+    "writer_job": "cb6422c14ed80c2fc03a5c5890b616a0f659c47804fb0310d58b9874315456b7",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A includes a private storage locker.",
+    "id": "5593399d0013a7e7f7bc45e119c82b5fac32d6ffc58758f0f98eadbfe96e6967"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F7",
+      "F8"
+    ],
+    "writer_job": "86aa94acbc90926613226aead77a76267cf2b45fb8b4599be4335c4a0da4a9c4",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment A includes a private storage locker.\nApartment B's building has a gym.",
+    "id": "e31f5661fce3f51f944b5cf0d7108cbd0d29b5b28758c3b2b2c08f684cbbb393"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "random_matched",
+    "included": [
+      "F1",
+      "F8",
+      "F7",
+      "F4",
+      "F2",
+      "F3"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment A includes a private storage locker.\nApartment B's building has a gym.",
+    "id": "6d74968ad3d432b413b67d7ea1ca844bfb512fd96b4f44353b4e766d21729286"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "random_matched",
+    "included": [
+      "F2",
+      "F7",
+      "F1",
+      "F4",
+      "F6",
+      "F3"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment B offers a 12-month lease.\nApartment A includes a private storage locker.",
+    "id": "332a181ca580485dcbffe0dbc5e298bd0744387f7bb4e91273ca6baaf8c47410"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "random_matched",
+    "included": [
+      "F4",
+      "F2",
+      "F3",
+      "F7",
+      "F6",
+      "F1"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment B offers a 12-month lease.\nApartment A includes a private storage locker.",
+    "id": "052d233ef54e0590050dd3ea2ffb97a8678c7a09db7e89707b1726c7454d5dba"
+  },
+  {
+    "case": "lease_break_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Apartment A rents for $1,400 per month.\nApartment B rents for $1,500 per month.\nEnding Apartment A's lease before 12 months requires a $3,000 early termination fee.\nApartment B's lease can be ended early with 60 days' notice and no fee.\nApartment A offers a 12-month lease.\nApartment B offers a 12-month lease.\nApartment A includes a private storage locker.\nApartment B's building has a gym.",
+    "id": "68541dd4800e9b70aaa7b78d3340e7c5c04cae69571177c1ef2721aaf0c51445"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "9b4ef2776950b8b99c90023be6a95ae683e83e92f780191013265f0c64ba01a5",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A's team works a compressed four-day week.\nOffer B includes a formal mentorship program.",
+    "id": "fa8192edb3cef4dd259dbe36142f1b68c4343b25a4d8e78a71adba07dad79dcb"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "bfae80463618100222d97180d9f8e6cdae52b8b276cd31e94c360b64126a806f",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A's team works a compressed four-day week.",
+    "id": "8c0ae55f7caef0853795e6ae06e333e5e42d5bb1edb39d3661da15c7803f1bbc"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "ab703a06012d94b03e3ac0cb005e3f0468076ce8baf6c745189257457308ef04",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A's team works a compressed four-day week.\nOffer B includes a formal mentorship program.",
+    "id": "1455825dcf97ad6010f029c46b3ab134ef4a5517f18282ff9a7fa484f6acfabd"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "ba6acd35646b69d94fc0d548547d4bf84b4f1b34df7bee8d183c774ebb9efca1",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A's team works a compressed four-day week.\nOffer B includes a formal mentorship program.",
+    "id": "e45e07e6b006cd5379e5e00dda60ad7419544af3a5e9fa36a7ec7437bd4be02e"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "e0fac99fdf86e4559d7283145e64514d20826b3b7ebed7dcf1807a4fb27dc1ce",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A's team works a compressed four-day week.",
+    "id": "6b10cc1e5125d3c4e313c38baedd035f5087bc8938c3e1c3a5c22ac811e483bf"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "982cbe8c2483d4b5e1ea938f7394dbb272ce793c0d89a42bc3da3cdc9d89e307",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A's team works a compressed four-day week.\nOffer B includes a formal mentorship program.",
+    "id": "486ed342c6f533de3a606c96ed196789c13945afe173242e451a16b5b31fecbe"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "neutral",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "7108c320b81366cca1d53731388faf121adaffa05d5260e64bbdc114a0c75960",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A's team works a compressed four-day week.\nOffer B includes a formal mentorship program.",
+    "id": "88a108e9834277ad18e1f3463e12138fbc28b2f3b84d9951c88e21bbb5a1673f"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "writer_job": "1ce69e8454c6e0775feb50d54f14ccbd03c5c3fe9859cab7a51f326499d4f005",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A's team works a compressed four-day week.",
+    "id": "b6e7a463e2ab7bd6b1f4b9b488f11a888da4356430ce9218a6380f2356bb09bc"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "balanced_promotional",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F9",
+      "F10"
+    ],
+    "writer_job": "bc36c0cbc631f260c31447ffdec775a152767d3b95a09fa73e42959ce1df0af1",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A's team works a compressed four-day week.\nOffer B includes a formal mentorship program.",
+    "id": "aae4fc3954133d7f3c6384fd41783aebebe4ef1c27979fc96392523ed49d1cf7"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "random_matched",
+    "included": [
+      "F3",
+      "F5",
+      "F7",
+      "F2",
+      "F4",
+      "F6",
+      "F8",
+      "F1"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 0,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A is a full-time position.\nOffer B is a full-time position.",
+    "id": "9ba20b91867d7decc4db46c4859ca0955f01db115e86e3314ca95f1dedcf0560"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "random_matched",
+    "included": [
+      "F6",
+      "F2",
+      "F5",
+      "F9",
+      "F1",
+      "F7",
+      "F4",
+      "F3"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 1,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A is a full-time position.\nOffer A's team works a compressed four-day week.",
+    "id": "ea93398ddcff288329a136427a85b08c067eb05201d82c312ab6eec4c4034425"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "random_matched",
+    "included": [
+      "F3",
+      "F9",
+      "F5",
+      "F2",
+      "F8",
+      "F1",
+      "F6",
+      "F4"
+    ],
+    "matching": "fact_count_and_valence",
+    "writer_replicate": 2,
+    "writer_model": "deepseek-ai/deepseek-v4.1-flash-1017",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer B is a full-time position.\nOffer A's team works a compressed four-day week.",
+    "id": "b332af689005197ee155eacb5574e1b3ccf7aeaaf265a4de0db6425b60ac685d"
+  },
+  {
+    "case": "job_moving_01",
+    "condition": "full_evidence",
+    "included": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "writer_replicate": -1,
+    "writer_model": "none",
+    "text": "Offer A pays an annual base salary of $70,000.\nOffer B pays an annual base salary of $67,000.\nOffer A provides no relocation assistance.\nOffer B reimburses relocation costs up to $6,000.\nOffer A is based in Fairview.\nOffer B is based in Fairview.\nOffer A is a full-time position.\nOffer B is a full-time position.\nOffer A's team works a compressed four-day week.\nOffer B includes a formal mentorship program.",
+    "id": "9e42290d087316b5682a0530a58faad9fcf5b72290fe97acc6cd8ef88c79f1f0"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "attempts": 1303,
+  "planned_evaluation_jobs": 1248,
+  "successful_evaluation_jobs": 1233,
+  "unknown_usage_attempts": 8,
+  "notes": [
+    "No full JANUS score is implemented. Null selection imbalance means unassigned/unusable valence.",
+    "Single-fact criticality holds other source facts fixed; possible_best_sets separately enumerates joint missing facts.",
+    "Objective gap is reported only for feasible choices; no invented penalty for constraint violation or deferral.",
+    "Primary contrast is incorrect commitment; constraint violation is secondary. Report clarification and deferral alongside it.",
+    "Paired intervals are descriptive equal-family bootstrap on complete packets; six families cannot establish generalization.",
+    "Warranted actions intersect optimal sets over finite completions, preserving common optima under ties.",
+    "Neither is an explicit receiver action. Clarification and deferral remain separate from incorrect commitments."
+  ]
+}

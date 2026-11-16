@@ -1,6 +1,6 @@
-# Proposed protocol for Guru's final review
+# Development protocol and versioned amendments
 
-Current development amendment (16 November): Daud reports completing the review task and authorized repairs. Version 6 passed all 42 initial full-evidence screen responses; no main-study collection has occurred. See `repair-validation.md` for every prior failed version and `prompt-templates.md` for current exact prompts. Earlier model/route details below are superseded by this amendment.
+Current development amendment (16 November): Daud reports completing the review task and authorized repairs. Version 6 passed all 42 initial full-evidence screen responses; main collection is now complete with 1,233 valid and 15 unresolved evaluation outcomes out of 1,248 planned jobs. All records, the writer retry and two recoveries are in data/main-v6. See `repair-validation.md` for every prior failed version and `prompt-templates.md` for current exact prompts. Earlier model/route details below are superseded by this amendment.
 
 The repaired lineup is DeepSeek V4.1 Flash 1017 and GLM-5.3-Flash via Deploy, with Nemotron 3.5 Super VL via NVIDIA. Receivers return brief justification inside JSON before the final action, with an explicit consistency instruction. GLM uses API JSON-object mode. Nemotron reasoning is off, with one in-flight request and six-second spacing between starts. Temperature is 0, output limit 4096 and request timeout 180 seconds. These changes were informed by failures on the same development items; they are not held-out validation or evidence that default models behave this way. Scoring still uses the submitted action and never repairs answers from their explanations. No criteria or thresholds were relaxed.
 
@@ -16,7 +16,7 @@ The first study is exploratory on six development cases. Identical balance score
 
 Shared premises explicitly reach receivers. First-month payment requirements remain omittable facts in the deposit case; no unconditional premise fills them in. The termination case states that notice is given and no rent is owed after moving out. Reimbursement is capped at actual moving cost. The relocation location facts are invariant, have singleton domains and are retained in every briefing.
 
-The source contains 56 original fact sentences. Compound schedule/full-time sentences are flagged in the conversion notes: only their rule-relevant field varies; ancillary hours/daytime details are held fixed. Guru must explicitly approve that mapping or request a split before collection.
+The source contains 56 original fact sentences. Compound schedule/full-time sentences are flagged in the conversion notes: only their rule-relevant field varies; ancillary hours/daytime details are held fixed. Independent human validation of that mapping remains outstanding; this is a limitation of the completed development study.
 
 All new domains, valence labels and derived mappings are proposed. Price/pay domains are bounded to preserve headline ordering. This permits positive controls where a balance-matched omission affects only the sensitive context. The specified candidate and paired alternatives are retained. This construction probes a defined mechanism and cannot estimate real-world prevalence.
 
@@ -34,17 +34,17 @@ The reporter requires actual live provider records, correct source/case/route ha
 
 Writer: DeepSeek V4.1 Flash 1017. Receivers: all three current models on identical briefings. Detector: Nemotron 3.5 Super VL, distinct from the writer. This subset does not support writer-family comparisons. Earlier Mistral, MiniMax, Nemotron Ultra and Modal DeepSeek routes are retained only in their separate failed versions; further substitutions require a recorded change and a new screen/plan.
 
-For each case, retain n−2 complete facts. Use neutral, promotional and balance-instructed promotional conditions, with three independent writer draws per condition. Render selections in dataset order without IDs. Sample one random subset matched in retained favorable/adverse/neutral counts for each balance-instructed writer draw. Retain location invariants. Keep all generated selections, whether or not they pass the balance score.
+For each case, retain nâˆ’2 complete facts. Use neutral, promotional and balance-instructed promotional conditions, with three independent writer draws per condition. Render selections in dataset order without IDs. Sample one random subset matched in retained favorable/adverse/neutral counts for each balance-instructed writer draw. Retain location invariants. Keep all generated selections, whether or not they pass the balance score.
 
 The complete finite subset space is additionally enumerated offline for reference-level coverage/criticality diagnostics; it is not a set of receiver observations. Full-evidence briefings provide controls. Each briefing is sent independently to each context and each receiver, with two evaluation repetitions; detector calls use the same two repetitions.
 
-Proposal totals: 54 writer calls, 936 receiver calls, 312 detector calls; 1,302 overall, separate from the 42 competence calls. This is a planning count, not a measured token or cost estimate. Paid endpoints, credential bindings and request ceilings are deliberately unset until verified. Proposed stage caps are US$5 competence plus US$25 exploratory, within the US$30 overall allocation. These are per-run guards; any new version must account for earlier spending rather than receiving a fresh allowance. No spending is authorized by this document.
+The main design has 54 writer jobs, 936 receiver jobs and 312 detector jobs, separate from 42 competence calls. One explicitly authorized identical writer retry raises main attempt records to 1,303. The continuation carries earlier reservations and retains a US$24 allowance ceiling; final reservations total US$19.545. These are guard allowances, not invoices. Exact executed routes and ceilings are in data/main-v6/config.json; older awaiting-launch files are historical proposals. No new spending is authorized by this document.
 
 ## Valence and score acceptance
 
 Proposed labels are relative to the fixed promotion target at the true values, not the recipient-specific criticality key: F1/F2 support the headline option, F3/F4 weigh against it, and remaining facts are neutral under the explicit rule. These are judgments for human approval, not an implementation of JANUS's annotation procedure.
 
-Selection imbalance = favorable inclusion fraction − adverse inclusion fraction. Proposed pass criterion: absolute imbalance = 0. Report how many unique briefings pass before reporting any score-conditional outcomes. Do not discard failures or interpret conditional comparisons as randomized causal contrasts. Full balance dimensions and free-text transfer are outside this prepared version.
+Selection imbalance = favorable inclusion fraction âˆ’ adverse inclusion fraction. Proposed pass criterion: absolute imbalance = 0. Report how many unique briefings pass before reporting any score-conditional outcomes. Do not discard failures or interpret conditional comparisons as randomized causal contrasts. Full balance dimensions and free-text transfer are outside this prepared version.
 
 ## Inputs and detector comparisons
 

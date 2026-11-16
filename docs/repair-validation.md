@@ -29,6 +29,13 @@ These repairs used failures on the same development cases. The screen is not hel
 - Version 5: DeepSeek and Super VL 14/14; GLM 13 valid correct answers plus one non-JSON preamble.
 - Version 6 adds GLM JSON mode and passes the fresh full screen.
 
-## Next stage
+## Main run completion
 
-Offline main review plan: `D:\Apart Sprint\AI x Epistemics Research Sprint\results\repair-v6-screen-20261115T184213Z-main-plan-review`. Writer jobs: 54. Proposed total main calls remain 1302. `config/exploratory.repair-v6.proposed.json` is not executable in its current awaiting-main-launch status. Cost reservations are allowances rather than billing verification.
+Main collection is complete. The six-family development run has 54 valid writer
+outputs in 55 attempts, then 1,248 evaluation records: 1,233 valid, six interrupted,
+seven invalid and two timed out. One identical writer retry was explicitly
+amended; both attempts remain. Two recovery events resumed only never-reserved
+jobs. No interrupted request was resent. See `../data/main-v6` and `RESULTS.md`.
+Reported main usage is 989,578 tokens with eight unknown-usage attempts. The
+US$19.545 reservation allowance is not an invoice. Frozen scientific settings and
+all earlier failed screen versions remain unchanged. Final coauthor review is open.

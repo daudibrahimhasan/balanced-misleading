@@ -1,0 +1,10 @@
+{
+  "chart_type": "grouped_bar",
+  "title": "Incorrect commitments among valid receiver responses",
+  "x": "condition",
+  "y": "violation_rate",
+  "group": "model",
+  "y_format": "percent",
+  "ylabel": "Incorrect commitment rate",
+  "caption": "Valid responses only. Consult summary.csv for planned denominators and unresolved-outcome bounds. No uncertainty intervals shown."
+}

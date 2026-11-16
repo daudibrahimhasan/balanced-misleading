@@ -1,0 +1,31 @@
+model,panel,condition,context,rate
+DeepSeek V4.1 Flash 1017,DeepSeek Flash 1017,Bal.,Sensitive,0.0
+DeepSeek V4.1 Flash 1017,DeepSeek Flash 1017,Bal.,Comparison,0.0
+DeepSeek V4.1 Flash 1017,DeepSeek Flash 1017,Full,Sensitive,0.0
+DeepSeek V4.1 Flash 1017,DeepSeek Flash 1017,Full,Comparison,0.0
+DeepSeek V4.1 Flash 1017,DeepSeek Flash 1017,Neut.,Sensitive,0.0
+DeepSeek V4.1 Flash 1017,DeepSeek Flash 1017,Neut.,Comparison,0.0
+DeepSeek V4.1 Flash 1017,DeepSeek Flash 1017,Promo,Sensitive,0.0
+DeepSeek V4.1 Flash 1017,DeepSeek Flash 1017,Promo,Comparison,0.0
+DeepSeek V4.1 Flash 1017,DeepSeek Flash 1017,Random,Sensitive,0.0
+DeepSeek V4.1 Flash 1017,DeepSeek Flash 1017,Random,Comparison,0.19444444444444445
+GLM-5.3-Flash,GLM-5.3-Flash,Bal.,Sensitive,0.2777777777777778
+GLM-5.3-Flash,GLM-5.3-Flash,Bal.,Comparison,0.05555555555555555
+GLM-5.3-Flash,GLM-5.3-Flash,Full,Sensitive,0.0
+GLM-5.3-Flash,GLM-5.3-Flash,Full,Comparison,0.0
+GLM-5.3-Flash,GLM-5.3-Flash,Neut.,Sensitive,0.1388888888888889
+GLM-5.3-Flash,GLM-5.3-Flash,Neut.,Comparison,0.05555555555555555
+GLM-5.3-Flash,GLM-5.3-Flash,Promo,Sensitive,0.19444444444444445
+GLM-5.3-Flash,GLM-5.3-Flash,Promo,Comparison,0.0
+GLM-5.3-Flash,GLM-5.3-Flash,Random,Sensitive,0.19444444444444445
+GLM-5.3-Flash,GLM-5.3-Flash,Random,Comparison,0.25
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Bal.,Sensitive,0.1111111111111111
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Bal.,Comparison,0.0
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Full,Sensitive,0.0
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Full,Comparison,0.0
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Neut.,Sensitive,0.0
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Neut.,Comparison,0.0
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Promo,Sensitive,0.3888888888888889
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Promo,Comparison,0.0
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Random,Sensitive,0.16666666666666666
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Random,Comparison,0.3055555555555556

@@ -1,0 +1,20 @@
+{
+  "chart_type": "grouped_bar",
+  "x": "method",
+  "y": "rate",
+  "group": "metric",
+  "group_order": [
+    "Recall",
+    "False alarm",
+    "Exact set"
+  ],
+  "ylabel": "Rate",
+  "xlabel": "Detector or same-information baseline",
+  "y_format": "percent",
+  "title": "Omission detection against simple baselines",
+  "figure_size": [
+    10,
+    5
+  ],
+  "caption": "Micro-averaged over exactly the same valid detector jobs for all methods. False alarms use harmless omitted facts only; present-fact flags are separate. All-planned deterministic baseline results are also retained. This is not a matched-FPR comparison."
+}

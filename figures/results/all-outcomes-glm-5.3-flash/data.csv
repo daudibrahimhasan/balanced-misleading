@@ -1,0 +1,51 @@
+context,condition,outcome,rate
+Sensitive,Bal.,Correct commitment,0.7222222222222222
+Sensitive,Bal.,Incorrect commitment,0.2777777777777778
+Sensitive,Bal.,Clarify,0.0
+Sensitive,Bal.,Defer,0.0
+Sensitive,Bal.,Unresolved,0.0
+Comparison,Bal.,Correct commitment,0.8888888888888888
+Comparison,Bal.,Incorrect commitment,0.05555555555555555
+Comparison,Bal.,Clarify,0.05555555555555555
+Comparison,Bal.,Defer,0.0
+Comparison,Bal.,Unresolved,0.0
+Sensitive,Full,Correct commitment,1.0
+Sensitive,Full,Incorrect commitment,0.0
+Sensitive,Full,Clarify,0.0
+Sensitive,Full,Defer,0.0
+Sensitive,Full,Unresolved,0.0
+Comparison,Full,Correct commitment,1.0
+Comparison,Full,Incorrect commitment,0.0
+Comparison,Full,Clarify,0.0
+Comparison,Full,Defer,0.0
+Comparison,Full,Unresolved,0.0
+Sensitive,Neut.,Correct commitment,0.8611111111111112
+Sensitive,Neut.,Incorrect commitment,0.1388888888888889
+Sensitive,Neut.,Clarify,0.0
+Sensitive,Neut.,Defer,0.0
+Sensitive,Neut.,Unresolved,0.0
+Comparison,Neut.,Correct commitment,0.8333333333333334
+Comparison,Neut.,Incorrect commitment,0.05555555555555555
+Comparison,Neut.,Clarify,0.1111111111111111
+Comparison,Neut.,Defer,0.0
+Comparison,Neut.,Unresolved,0.0
+Sensitive,Promo,Correct commitment,0.19444444444444445
+Sensitive,Promo,Incorrect commitment,0.19444444444444445
+Sensitive,Promo,Clarify,0.6111111111111112
+Sensitive,Promo,Defer,0.0
+Sensitive,Promo,Unresolved,0.0
+Comparison,Promo,Correct commitment,1.0
+Comparison,Promo,Incorrect commitment,0.0
+Comparison,Promo,Clarify,0.0
+Comparison,Promo,Defer,0.0
+Comparison,Promo,Unresolved,0.0
+Sensitive,Random,Correct commitment,0.7777777777777778
+Sensitive,Random,Incorrect commitment,0.19444444444444445
+Sensitive,Random,Clarify,0.027777777777777776
+Sensitive,Random,Defer,0.0
+Sensitive,Random,Unresolved,0.0
+Comparison,Random,Correct commitment,0.6111111111111112
+Comparison,Random,Incorrect commitment,0.25
+Comparison,Random,Clarify,0.1388888888888889
+Comparison,Random,Defer,0.0
+Comparison,Random,Unresolved,0.0

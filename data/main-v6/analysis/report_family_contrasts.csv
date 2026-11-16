@@ -1,0 +1,25 @@
+model,context_index,contrast,complete_families,excluded_families,mean_family_delta,descriptive_95_low,descriptive_95_high
+DeepSeek V4.1 Flash 1017,0,promotional - neutral,6,[],0.0,0.0,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - neutral,5,['lease_deposit'],0.0,0.0,0.0
+DeepSeek V4.1 Flash 1017,0,random_matched - neutral,5,['job_moving'],0.0,0.0,0.0
+DeepSeek V4.1 Flash 1017,0,balanced_promotional - random_matched,4,"['lease_deposit', 'job_moving']",0.0,0.0,0.0
+DeepSeek V4.1 Flash 1017,1,promotional - neutral,5,['job_moving'],0.0,0.0,0.0
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - neutral,5,['job_moving'],0.0,0.0,0.0
+DeepSeek V4.1 Flash 1017,1,random_matched - neutral,5,['job_moving'],0.23333333333333334,0.0,0.5666666666666667
+DeepSeek V4.1 Flash 1017,1,balanced_promotional - random_matched,6,[],-0.19444444444444445,-0.47222222222222227,0.0
+GLM-5.3-Flash,0,promotional - neutral,6,[],0.05555555555555556,-0.3333333333333333,0.49999999999999994
+GLM-5.3-Flash,0,balanced_promotional - neutral,6,[],0.1388888888888889,-0.055555555555555546,0.41666666666666674
+GLM-5.3-Flash,0,random_matched - neutral,6,[],0.05555555555555555,-0.16666666666666666,0.3333333333333333
+GLM-5.3-Flash,0,balanced_promotional - random_matched,6,[],0.08333333333333336,-0.25,0.3888888888888889
+GLM-5.3-Flash,1,promotional - neutral,6,[],-0.05555555555555555,-0.16666666666666666,0.0
+GLM-5.3-Flash,1,balanced_promotional - neutral,6,[],0.0,-0.16666666666666666,0.16666666666666666
+GLM-5.3-Flash,1,random_matched - neutral,6,[],0.19444444444444445,0.027777777777777776,0.4166666666666666
+GLM-5.3-Flash,1,balanced_promotional - random_matched,6,[],-0.19444444444444442,-0.4444444444444444,0.05555555555555556
+Nemotron 3.5 Super VL,0,promotional - neutral,6,[],0.38888888888888884,0.1111111111111111,0.6944444444444443
+Nemotron 3.5 Super VL,0,balanced_promotional - neutral,6,[],0.1111111111111111,0.0,0.3333333333333333
+Nemotron 3.5 Super VL,0,random_matched - neutral,6,[],0.16666666666666666,0.0,0.38888888888888884
+Nemotron 3.5 Super VL,0,balanced_promotional - random_matched,6,[],-0.05555555555555555,-0.3333333333333333,0.16666666666666666
+Nemotron 3.5 Super VL,1,promotional - neutral,6,[],0.0,0.0,0.0
+Nemotron 3.5 Super VL,1,balanced_promotional - neutral,6,[],0.0,0.0,0.0
+Nemotron 3.5 Super VL,1,random_matched - neutral,6,[],0.3055555555555555,0.08333333333333333,0.611111111111111
+Nemotron 3.5 Super VL,1,balanced_promotional - random_matched,6,[],-0.3055555555555555,-0.611111111111111,-0.08333333333333333

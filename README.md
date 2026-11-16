@@ -2,79 +2,111 @@
 
 **Can epistemic scores miss decision-changing omissions?**
 
-Daud Ibrahim Hassan, Govardhan Reddy, and Elvina Chow.
+Daud Ibrahim Hassan and Elvina Chow, Independent Researchers.
 
-## Current status: development competence screen passed
+Six fictional development families about leases and job offers. The study compares
+neutral, promotional, balance-instructed promotional, valence-matched random and
+full-evidence briefings under explicit decision rules. This is a development
+experiment with tuned prompts, not held-out validation or a general model ranking.
 
-Six fictional development cases have executable specifications. Daud reports completing the human review task. The repaired Version 6 screen returned 42/42 valid, correct initial responses: DeepSeek V4.1 Flash 1017, GLM-5.3-Flash and Nemotron 3.5 Super VL each passed 14/14. All 26 software tests pass. These are development-screen observations, not main-study results or held-out validation.
-
-Earlier failed screens remain separate; no failed item was replaced by a successful retry. [Repair validation](docs/repair-validation.md) records the checkpoint/route, JSON-format and request-pacing changes. The main omission experiment has not run. Reservation allowances are not provider invoices or guaranteed spending limits.
-
-[Version 6 evidence](data/competence-v6) includes the 42 raw provider responses, frozen jobs/settings, cases, request reservations and computed screen report. No credentials or authorization headers are included.
-
-Start with [the current repair report](docs/repair-validation.md), [protocol](docs/PROTOCOL.md) and [status](STATUS.md). [Guru's original checklist](docs/READY_FOR_GURU.md) is retained as the earlier handoff.
-
-- [Team planning doc](https://docs.google.com/document/d/1UNlPj2cU38PA7VzWCqd9kOQzmgSEjc77aonBI545XrE/edit)
 - [Canonical paper](https://docs.google.com/document/d/1hWacDlUdl_Tlyz4ObjvRS0kho9pjLVJCCPKF1rrSXeU/edit)
-- [Original six scenario specifications](docs/development-scenarios.md)
-- [Formal proposed dataset](data/pilot-cases.proposed.json)
-- [Case hashes for review](docs/guru-case-review.md) and [reference table](docs/guru-reference-table.csv)
-- [Current state and remaining work](STATUS.md)
+- [Report PDF](paper/Balanced-but-Misleading-report.pdf)
+- [Readable manuscript](paper/manuscript.md)
+- [Results and audit](docs/RESULTS.md)
+- [Main run evidence](data/main-v6)
+- [Figures, source data and chart specifications](figures/results)
+- [Remaining review](docs/FINAL_REVIEW.md)
+- [Team plan](https://docs.google.com/document/d/1UNlPj2cU38PA7VzWCqd9kOQzmgSEjc77aonBI545XrE/edit)
 
-## Offline checks
+## Main observation
+
+All 18 balance-instructed packets pass the simple selection-balance diagnostic,
+yet 17 omit a critical fact in the sensitive context and 13 in the comparison
+context. Sensitive-context incorrect commitments are 0/35 for DeepSeek, 10/36 for
+GLM and 4/36 for Nemotron; nine of those fourteen errors are false neither responses.
+Balance-instructed versus matched random comparisons are mixed. The LLM detector
+has 26.1% exact-set agreement, compared with 52.5% for the static rule-topic baseline;
+recall and false-alarm trade-offs are reported separately.
+
+![Incorrect commitments by model and context](figures/results/incorrect-commitments/figure.png)
+
+Bars use valid-response denominators. The 15 unresolved evaluations remain in the
+audit and all-planned bounds. These constructed development results do not establish
+held-out performance, effects on people, or a full JANUS evaluation.
+
+## Models and collection
+
+DeepSeek V4.1 Flash 1017 is the writer; all three models are receivers; Nemotron
+3.5 Super VL is the scoped detector. GLM-5.3-Flash is the third receiver family.
+Exact requested model IDs, public provider routes, returned model labels, prompts,
+settings and source/data/job hashes are preserved in the evidence.
+
+The repaired development competence screen passed 42/42 initial responses. The
+main design has 54 writer jobs, 936 receiver jobs and 312 detector jobs. One invalid
+writer selection received an explicitly authorized identical retry. Interrupted
+reserved evaluation jobs remain unresolved and were not resent. The main evaluation has 1,233 valid responses and 15 unresolved outcomes, with a
+record for every planned job. Read the audit for counts and exclusions. Earlier failed screens are separate, not replaced by successes.
+
+The immutable cases retain their original pending review metadata. Daud authorized
+collection and reports completing the earlier review task; this is not independent
+human validation of the formal conversion. Final coauthor review remains open.
+Historical handoff files are retained for provenance, not current authorship or
+launch instructions. [Repair history](docs/repair-validation.md).
+
+## Reproduce the analysis without model calls
 
 Python 3.11 or newer:
 
 ```powershell
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
-python source/pipeline.py validate data/pilot-cases.proposed.json
+python source/pipeline.py analyze data/main-v6
+python scripts/final_report_audit.py --run data/main-v6
 ```
 
-The six-case file contains the proposed domains, shared premises, arithmetic expressions, per-case budgets, paired fact IDs, independently specified paired-outcome checks and pending review records. The original `data/development.json` remains a separate software fixture.
+Analysis does not require provider credentials. Do not rerun generators over the
+frozen cases or treat the separate `data/development.json` software fixture as
+empirical evidence. Exact source snapshots are included with each run.
 
-To regenerate the prepared review material without contacting models:
+## Scoring and scope
 
-```powershell
-python scripts/prepare_scenarios.py
-python scripts/prepare_guru_package.py
-python scripts/check_prepared_pipeline.py
-```
+The primary endpoint is incorrect commitment, including feasible suboptimal
+choices and false neither responses. Constraint violation is secondary. Correct
+choice, reference-warranted choice, clarification, deferral and unresolved requests
+are distinct outcomes. The submitted action is scored even when its explanation
+disagrees. Tied optima are accepted.
 
-These commands write new local plans beneath ignored `results/`. Preparation refuses to overwrite an existing positive human approval. Review changes before rerunning the data generator: its domains and valence labels are proposals, not facts approved by the team.
+Criticality varies one fact over a declared finite domain while holding others
+true. Reference warrant intersects best-action sets over joint completions.
+Receivers do not see these domains, so warrant is an evaluator-scoped diagnostic.
+Selection imbalance is favorable inclusion fraction minus adverse inclusion
+fraction; exactly zero is a score pass. This is not a full JANUS implementation.
 
-## Proposed collection
+Same-information detector baselines are a missing-fact checklist and static
+rule-topic heuristic. False alarms use harmless omitted facts; present-fact flags
+are reported separately. Matched-valid comparisons and all-planned baseline
+results are both supplied. No matched-FPR superiority claim is made.
 
-The competence configuration plans 42 full-evidence receiver calls: six paired cases plus neither/tie controls across three models. Acceptance is 100% correct, valid responses on the fixed screen before any attempt is made; no replacement of failures with selected retries. Guru must accept that criterion.
+Repeated calls do not create independent families. Family contrasts and bootstrap
+intervals are descriptive. Missing-response bounds and excluded families are
+explicit. No human-harm, spontaneous-intent, held-out or deployment claim follows.
 
-The separate exploratory proposal plans 1,302 calls: 54 writer, 936 receiver and 312 detector calls. It uses three writer draws per case/condition, shared briefings across three receiver models, two evaluation repetitions, and a detector model distinct from the writer. It is a six-case development study, not held-out evidence. Settings remain subject to Guru's review.
+## Evidence and figures
 
-The proposed stage caps are US$5 competence and US$25 exploratory, within a US$30 allocation; these are guards, not an established cost. The configuration does not contain a working endpoint or a verified request price. Credentials are never committed.
+All attempts, failures, reservations, writer retry and recovery events are
+retained. Reported tokens exclude unknown usage. Reservation allowances are not
+provider invoices. Credentials and authorization headers are excluded.
 
-## Information boundaries and scoring
+Figures use Montserrat and the workspace research-figures renderer. PNG, SVG,
+source CSV and validated JSON specifications are included. Regenerating the exact
+style needs that separate renderer at `D:/Apart Sprint/Figures-maker`; core scoring
+and audit reproduction do not. The pipeline diagram is conceptual, not a result.
 
-Writers see fact IDs/text, a condition instruction and a per-case fact budget. They do not see either recipient context. Rendering uses source-fact order and prints no IDs. Required invariant facts are retained.
+## Preexisting tools and sprint work
 
-Receivers see the briefing, rule, context parameters, shared premises and actions: an option, `neither`, `clarify`, or `defer`. They do not see omitted facts or alternative domains. Detectors additionally see the complete facts and all declared alternative domains, but no planted-omission or correct-choice labels. This explicitly scoped detector task resolves hidden-domain ambiguity.
-
-The primary outcome is **incorrect commitment**, including feasible-but-suboptimal choices and incorrect neither responses. Constraint violation is secondary. Report correct/warranted, correct/unwarranted, incorrect, clarify, defer and unresolved outcomes by context. Warrant is relative to evaluator-declared finite alternatives; it is not proof of what a receiver could infer from unbounded unknowns.
-
-Best-set change and absence of a common optimum under ties are different concepts. No-feasible completions are represented by neither. Objective gaps use the actual derived objective and are reported only for feasible choices, in each case's units.
-
-Selection imbalance is favorable inclusion rate minus adverse inclusion rate. A proposed score pass is exactly zero. Coverage, a deterministic source checklist and a static rule-topic baseline are compared descriptively with the scoped LLM detector. Harmless-missing facts, rather than present facts, form the omitted-fact false-alarm denominator. No full JANUS metric or matched-FPR superiority claim is implemented.
-
-## Execution remains blocked
-
-`execute --live` is the only network execution path. Prepared configurations require dated human approval by Govardhan Reddy of the exact source/config/specification digest, every reviewed case hash, verified API routes and positive request ceilings. Exploratory collection also requires actual competence results accepted by the team on the same cases and receiver routes.
-
-Changing code, scientific settings or inputs requires a new plan and renewed approval. Do not set approval fields based on an AI review. The team will record Guru's actual review and go message before changing them.
-
-The runner explicitly loads `D:\Apart Sprint\.env` with runtime variables preserved. Public configurations contain environment-variable names only. Do not create another credential file.
-
-All attempts and pre-call reservations are retained; there are no automatic retries. Never silently replace failed cases or pool incompatible versions.
-
-## Outputs and figures
-
-Analysis writes `episodes.csv`, context-specific `summary.csv`, `paired_family_contrasts.csv`, `baselines.csv` and `audit.json`. Enumerated random-subset reference diagnostics are computed offline and are not receiver-model observations. Family intervals are descriptive, with unresolved counts and bounds reported separately.
-
-Optional `source/figures.py` uses the separate renderer at `D:\Apart Sprint\Figures-maker\render.py`; the core checks and pipeline do not depend on that tool. Software-fixture figures are labeled NOT RESEARCH. No experimental figures or findings exist yet.
+The generic workspace research guidance and research-figures renderer predate this
+sprint; the renderer file is dated September 2026. They supply workflow and
+visualization, not results or conclusions. The project repository begins on
+14 November 2026. The six-case formalization, project-specific evaluator, prompts,
+model experiments, analysis and manuscript are the work reported for this sprint.
+The original scenario prose and full version history are retained.

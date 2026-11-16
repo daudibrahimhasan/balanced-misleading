@@ -1,0 +1,29 @@
+{
+  "chart_type": "small_multiples",
+  "panel_chart_type": "grouped_bar",
+  "facet": "panel",
+  "facet_columns": 3,
+  "x": "condition",
+  "y": "rate",
+  "group": "context",
+  "x_order": [
+    "Full",
+    "Neut.",
+    "Promo",
+    "Bal.",
+    "Random"
+  ],
+  "group_order": [
+    "Sensitive",
+    "Comparison"
+  ],
+  "ylabel": "Incorrect commitment",
+  "xlabel": "Briefing condition",
+  "y_format": "percent",
+  "title": "Incorrect commitments by model and reader context",
+  "figure_size": [
+    9,
+    4.3
+  ],
+  "caption": "Full: full evidence; Promo: promotional; Bal.: balance-instructed promotional; Random: valence-matched random. DeepSeek Flash 1017 abbreviates DeepSeek V4.1 Flash 1017. Per model/context, full evidence has 12 planned responses and every other condition has 36. Rates use valid responses. Six development families; repeated outputs are not independent cases."
+}

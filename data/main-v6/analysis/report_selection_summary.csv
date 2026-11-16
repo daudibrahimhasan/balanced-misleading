@@ -1,0 +1,6 @@
+condition,packets,distinct_texts,zero_imbalance,critical_sensitive,critical_comparison,unresolved_reference_sensitive,unresolved_reference_comparison
+neutral,18,8,18,9,9,9,9
+promotional,18,11,0,18,0,18,0
+balanced_promotional,18,10,18,17,13,17,13
+random_matched,18,16,18,7,10,7,10
+full_evidence,6,6,6,0,0,0,0

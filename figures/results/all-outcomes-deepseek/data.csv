@@ -1,0 +1,51 @@
+context,condition,outcome,rate
+Sensitive,Bal.,Correct commitment,0.3055555555555556
+Sensitive,Bal.,Incorrect commitment,0.0
+Sensitive,Bal.,Clarify,0.6666666666666666
+Sensitive,Bal.,Defer,0.0
+Sensitive,Bal.,Unresolved,0.027777777777777776
+Comparison,Bal.,Correct commitment,0.5833333333333334
+Comparison,Bal.,Incorrect commitment,0.0
+Comparison,Bal.,Clarify,0.4166666666666667
+Comparison,Bal.,Defer,0.0
+Comparison,Bal.,Unresolved,0.0
+Sensitive,Full,Correct commitment,0.9166666666666666
+Sensitive,Full,Incorrect commitment,0.0
+Sensitive,Full,Clarify,0.0
+Sensitive,Full,Defer,0.0
+Sensitive,Full,Unresolved,0.08333333333333333
+Comparison,Full,Correct commitment,1.0
+Comparison,Full,Incorrect commitment,0.0
+Comparison,Full,Clarify,0.0
+Comparison,Full,Defer,0.0
+Comparison,Full,Unresolved,0.0
+Sensitive,Neut.,Correct commitment,0.5277777777777778
+Sensitive,Neut.,Incorrect commitment,0.0
+Sensitive,Neut.,Clarify,0.4722222222222222
+Sensitive,Neut.,Defer,0.0
+Sensitive,Neut.,Unresolved,0.0
+Comparison,Neut.,Correct commitment,0.5833333333333334
+Comparison,Neut.,Incorrect commitment,0.0
+Comparison,Neut.,Clarify,0.3888888888888889
+Comparison,Neut.,Defer,0.0
+Comparison,Neut.,Unresolved,0.027777777777777776
+Sensitive,Promo,Correct commitment,0.05555555555555555
+Sensitive,Promo,Incorrect commitment,0.0
+Sensitive,Promo,Clarify,0.9444444444444444
+Sensitive,Promo,Defer,0.0
+Sensitive,Promo,Unresolved,0.0
+Comparison,Promo,Correct commitment,1.0
+Comparison,Promo,Incorrect commitment,0.0
+Comparison,Promo,Clarify,0.0
+Comparison,Promo,Defer,0.0
+Comparison,Promo,Unresolved,0.0
+Sensitive,Random,Correct commitment,0.6388888888888888
+Sensitive,Random,Incorrect commitment,0.0
+Sensitive,Random,Clarify,0.3333333333333333
+Sensitive,Random,Defer,0.0
+Sensitive,Random,Unresolved,0.027777777777777776
+Comparison,Random,Correct commitment,0.5833333333333334
+Comparison,Random,Incorrect commitment,0.19444444444444445
+Comparison,Random,Clarify,0.2222222222222222
+Comparison,Random,Defer,0.0
+Comparison,Random,Unresolved,0.0

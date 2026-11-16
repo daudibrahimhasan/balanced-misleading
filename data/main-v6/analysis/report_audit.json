@@ -1,0 +1,42 @@
+{
+  "run_created_utc": "2026-11-15T21:44:37.709612+00:00",
+  "planned_writer_jobs": 54,
+  "writer_attempts": 55,
+  "evaluation_jobs": 1248,
+  "evaluation_records": 1248,
+  "evaluation_statuses": {
+    "ok": 1233,
+    "interrupted": 6,
+    "invalid_output": 7,
+    "request_error": 2
+  },
+  "missing_jobs": [],
+  "duplicate_evaluation_attempts": [],
+  "independently_recomputed_receiver_score_mismatches": [],
+  "known_reported_usage": {
+    "completion_tokens": 268010,
+    "prompt_tokens": 721568,
+    "total_tokens": 989578
+  },
+  "usage_unknown_attempts": 8,
+  "billing": "Reported tokens exclude unknown usage; reservation estimates are not verified invoices.",
+  "review": "Automated recomputation, not independent human review.",
+  "reservations": 1303,
+  "reserved_usd": 19.54500000000036,
+  "unique_briefing_ids": 78,
+  "distinct_briefing_texts": 43,
+  "sender_blindness_and_shared_briefings_checked": true,
+  "raw_successes_reparsed": true,
+  "provider_response_model_labels": {
+    "DeepSeek V4.1 Flash 1017": [
+      "deepseek-ai/deepseek-v4.1-flash-1017"
+    ],
+    "GLM-5.3-Flash": [
+      "zai-org/glm-5.3-flash"
+    ],
+    "Nemotron 3.5 Super VL": [
+      "private/nvidia/nemotron-3.5-super-120b-a12b"
+    ]
+  },
+  "collection_state": "collection_finished_review_outputs"
+}

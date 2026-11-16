@@ -1,0 +1,2 @@
+{"interrupted_reservations": 3, "policy": "Resume only never-reserved jobs; no duplicate successful or uncertain calls.", "reason": "No live collection process remained; saved state was stale", "timestamp": "2026-11-15T21:52:49.881536+00:00"}
+{"interrupted_reservations": 3, "policy": "Resume only never-reserved jobs; no duplicate successful or uncertain calls.", "reason": "No live collection process remained; saved state was stale", "timestamp": "2026-11-16T06:11:46.537890+00:00"}
